@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "globalDotEnv": [".env"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"],
+      "dotEnv": [".env.production.local", ".env.local", ".env.production", ".env"]
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false,
+      "dotEnv": [".env.development.local", ".env.local", ".env.development", ".env"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "format": {
+      "outputs": []
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    }
+  }
+}
