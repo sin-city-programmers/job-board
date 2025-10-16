@@ -1,5 +1,11 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+# husky - DEPRECATED
+
+# Please remove the following two lines from .husky/pre-commit:
+
+# #!/usr/bin/env sh
+# . "$(dirname -- "$0")/_/husky.sh"
+
+# They WILL FAIL in v10.0.0
 
 npm run lint
 npm run format:check
