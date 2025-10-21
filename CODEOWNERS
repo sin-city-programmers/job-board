@@ -1,0 +1,7 @@
+# Global code ownership
+# You are the code owner of all files except /public and /src directories
+* @admin
+
+# Exclude public and src directories from global ownership
+/public/
+/src/
