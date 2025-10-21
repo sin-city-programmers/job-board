@@ -3,5 +3,5 @@
 * @sin-city-programmers/admin
 
 # Exclude public and src directories from global ownership
-/public/
-/src/
+/apps/
+/libs/
