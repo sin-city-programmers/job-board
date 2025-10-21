@@ -4,8 +4,10 @@ import baseConfig from '../../eslint.config.mjs';
 export default [
   ...baseConfig,
   {
-    files: ['**/*.ts', '**/*.js'],
     ignores: ['out-tsc/**', 'test-output/**'],
+  },
+  {
+    files: ['**/*.ts', '**/*.js'],
     plugins: {
       playwright,
     },
