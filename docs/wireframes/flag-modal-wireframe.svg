@@ -1,0 +1,62 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (dimmed) -->
+  <rect width="1200" height="800" fill="#000" opacity="0.5"/>
+  
+  <!-- Modal -->
+  <g transform="translate(300, 150)">
+    <rect width="600" height="500" fill="#ffffff" rx="12" stroke="#ccc" stroke-width="2"/>
+    
+    <!-- Close Button -->
+    <circle cx="560" cy="40" r="20" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+    <text x="560" y="48" font-family="Arial, sans-serif" font-size="20" fill="#666" text-anchor="middle" font-weight="bold">×</text>
+    
+    <!-- Icon -->
+    <circle cx="300" cy="100" r="50" fill="#ffebee" stroke="#f44336" stroke-width="3"/>
+    <text x="300" y="115" font-family="Arial, sans-serif" font-size="40" fill="#f44336" text-anchor="middle">⚠</text>
+    
+    <!-- Title -->
+    <text x="300" y="190" font-family="Arial, sans-serif" font-size="24" fill="#333" text-anchor="middle" font-weight="bold">Flag This Content</text>
+    <text x="300" y="220" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Help us keep the platform safe and relevant</text>
+    
+    <!-- Form -->
+    <g transform="translate(75, 250)">
+      
+      <!-- What's being flagged -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#666">You are flagging:</text>
+        <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">"Senior Full Stack Developer" at Acme Corp</text>
+      </g>
+      
+      <!-- Comment Field -->
+      <g transform="translate(0, 60)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Why are you flagging this? (Optional)</text>
+        <text x="0" y="18" font-family="Arial, sans-serif" font-size="12" fill="#999">Help us understand the issue</text>
+        
+        <rect y="28" width="450" height="80" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+        <text x="15" y="50" font-family="Arial, sans-serif" font-size="14" fill="#999">This appears to be spam / misleading / inappropriate...</text>
+        <text x="430" y="100" font-family="Arial, sans-serif" font-size="12" fill="#999" text-anchor="end">0 / 200</text>
+      </g>
+      
+      <!-- Info Note -->
+      <g transform="translate(0, 160)">
+        <rect width="450" height="50" fill="#fff9c4" stroke="#f57f17" stroke-width="1" rx="4"/>
+        <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" fill="#f57f17">⚠️ Flagged content will be reviewed by our admin team.</text>
+        <text x="15" y="37" font-family="Arial, sans-serif" font-size="12" fill="#f57f17">Your report will remain confidential.</text>
+      </g>
+      
+    </g>
+    
+    <!-- Buttons -->
+    <g transform="translate(150, 430)">
+      <rect width="140" height="45" fill="#fff" stroke="#ccc" stroke-width="2" rx="6"/>
+      <text x="70" y="29" font-family="Arial, sans-serif" font-size="15" fill="#666" text-anchor="middle" font-weight="bold">Cancel</text>
+      
+      <rect x="160" width="140" height="45" fill="#f44336" rx="6"/>
+      <text x="230" y="29" font-family="Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold">Submit Flag</text>
+    </g>
+    
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="780" font-family="Arial, sans-serif" font-size="12" fill="#fff">WIREFRAME - Flag Content Modal (User View)</text>
+</svg>

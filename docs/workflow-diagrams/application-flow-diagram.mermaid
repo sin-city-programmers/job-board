@@ -1,0 +1,44 @@
+graph TD
+    A[Job Detail Page] --> B{Click Apply Now}
+    
+    B --> C{Already Applied?}
+    C -->|Yes| D[Show: Already Applied Message]
+    C -->|No| E[Application Modal/Page]
+    
+    E --> F[Auto-filled Information]
+    F --> G[Name from Profile]
+    F --> H[Email from Profile]
+    F --> I[Resume Attached from Profile]
+    F --> J[Tech Stack from Profile]
+    
+    E --> K[Optional: Cover Message]
+    K --> L[Textarea - 500 chars max]
+    
+    E --> M[Review & Submit]
+    M --> N{Validation}
+    N -->|Missing Required Info| O[Show Error]
+    O --> E
+    
+    N -->|Valid| P[Submit Application]
+    P --> Q[Create Application Record]
+    Q --> R[Set Status: New/Pending]
+    Q --> S[Link to Job & User]
+    Q --> T[Store Submission Date]
+    
+    P --> U[Success Confirmation Screen]
+    U --> V[Show Success Message]
+    U --> W[Display Job Title & Company]
+    U --> X[Next Steps Info]
+    
+    U --> Y{User Action}
+    Y -->|View Application| Z[Go to My Applications]
+    Y -->|Browse More Jobs| AA[Go to Browse Jobs]
+    Y -->|Go to Dashboard| AB[Go to Dashboard]
+    
+    Z --> AC[My Applications List]
+    AC --> AD[Show New Application at Top]
+    
+    style E fill:#fff4e1
+    style U fill:#e8f5e9
+    style P fill:#e3f2fd
+    style AC fill:#f3e5f5

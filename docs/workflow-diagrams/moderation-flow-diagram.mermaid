@@ -1,0 +1,54 @@
+graph TD
+    A[User Views Content] --> B{Content Type}
+    
+    B -->|Job Posting| C[Job Detail Page]
+    B -->|User Profile| D[Profile View Page]
+    
+    C --> E[Flag Job Button]
+    D --> F[Flag Profile Button]
+    
+    E --> G[Flag Modal Opens]
+    F --> G
+    
+    G --> H[Short Comment Field]
+    H --> I[Optional: Why flagging?]
+    I --> J[Submit Flag Button]
+    
+    J --> K[Create Flag Record]
+    K --> L[Store: Content ID, Reporter, Comment, Date]
+    
+    K --> M{Count Total Flags}
+    M -->|Less than 3 flags| N[Content Remains Visible]
+    M -->|3 or more flags| O[Auto-hide Content]
+    
+    O --> P[Content Hidden from Public]
+    P --> Q[Send to Admin Review Queue]
+    
+    N --> R[Flag Added to Review Queue]
+    R --> S[Visible in Admin Moderation Panel]
+    
+    Q --> S
+    
+    S --> T[Admin Reviews Flagged Content]
+    T --> U[View Content Details]
+    U --> V[View All Flags & Comments]
+    U --> W[View Reporter Information]
+    
+    T --> X{Admin Decision}
+    X -->|Ignore/Dismiss| Y[Remove All Flags]
+    X -->|Delete Content| Z[Permanently Delete]
+    
+    Y --> AA[Content Remains/Becomes Visible]
+    Y --> AB[Clear Flag Count]
+    
+    Z --> AC[Content Deleted from Platform]
+    Z --> AD[Notify Content Owner - Optional]
+    
+    AC --> AE[Future: Track Bad Actors]
+    AD --> AE
+    AE --> AF[Consider User/Company Actions Later]
+    
+    style G fill:#fff4e1
+    style O fill:#ffebee
+    style S fill:#e3f2fd
+    style X fill:#f3e5f5

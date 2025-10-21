@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (dimmed) -->
+  <rect width="1200" height="900" fill="#000" opacity="0.5"/>
+  
+  <!-- Modal -->
+  <g transform="translate(350, 200)">
+    <rect width="500" height="500" fill="#ffffff" rx="12" stroke="#ccc" stroke-width="2"/>
+    
+    <!-- Close Button -->
+    <circle cx="460" cy="40" r="20" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+    <text x="460" y="48" font-family="Arial, sans-serif" font-size="20" fill="#666" text-anchor="middle" font-weight="bold">×</text>
+    
+    <!-- Logo/Title -->
+    <text x="250" y="80" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#333" text-anchor="middle">Sin City Tech Jobs</text>
+    <text x="250" y="110" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Sign in to apply for jobs or post opportunities</text>
+    
+    <!-- OAuth Buttons -->
+    <g transform="translate(75, 150)">
+      <!-- LinkedIn Button -->
+      <rect width="350" height="55" fill="#0077b5" rx="6"/>
+      <circle cx="40" cy="27.5" r="15" fill="#fff"/>
+      <text x="175" y="33" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">Continue with LinkedIn</text>
+      
+      <!-- Google Button -->
+      <g transform="translate(0, 75)">
+        <rect width="350" height="55" fill="#fff" stroke="#ddd" stroke-width="2" rx="6"/>
+        <circle cx="40" cy="27.5" r="15" fill="#4285f4"/>
+        <circle cx="40" cy="27.5" r="10" fill="#fff"/>
+        <text x="175" y="33" font-family="Arial, sans-serif" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">Continue with Google</text>
+      </g>
+    </g>
+    
+    <!-- Divider -->
+    <line x1="100" y1="320" x2="400" y2="320" stroke="#e0e0e0" stroke-width="1"/>
+    
+    <!-- Info Text -->
+    <text x="250" y="365" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">New to Sin City Tech Jobs?</text>
+    <text x="250" y="390" font-family="Arial, sans-serif" font-size="13" fill="#999" text-anchor="middle">After signing in, you'll create your profile and can:</text>
+    
+    <!-- Benefits List -->
+    <g transform="translate(80, 405)">
+      <circle cx="0" cy="0" r="4" fill="#4caf50"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="13" fill="#555">Apply to jobs in the Tech Alley community</text>
+      
+      <circle cx="0" cy="25" r="4" fill="#4caf50"/>
+      <text x="15" y="30" font-family="Arial, sans-serif" font-size="13" fill="#555">Post jobs or gigs for your company</text>
+      
+      <circle cx="0" cy="50" r="4" fill="#4caf50"/>
+      <text x="15" y="55" font-family="Arial, sans-serif" font-size="13" fill="#555">Connect with local tech talent</text>
+    </g>
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="880" font-family="Arial, sans-serif" font-size="12" fill="#fff">WIREFRAME - Login/Signup Modal (Triggered by Apply or Post Job)</text>
+</svg>

@@ -1,0 +1,63 @@
+graph TD
+    A[User Selects: I'm Hiring Talent] --> B{Has Invite Link?}
+    
+    B -->|No - Creating New Company| C[Company Creation Form]
+    B -->|Yes - Has Invite Token| D[Validate Invite Token]
+    
+    D --> E{Token Valid?}
+    E -->|Valid| F[Auto-join Existing Company]
+    E -->|Invalid| G[Show Error - Redirect to Create]
+    
+    C --> H[Company Information]
+    H --> I[Company Name - Required]
+    H --> J[Website URL - Required]
+    H --> K[Description - Required]
+    H --> L[Logo Upload - Optional]
+    
+    I --> M[Validation Check]
+    J --> M
+    K --> M
+    L --> M
+    
+    M --> N{Company Name Unique?}
+    N -->|No - Duplicate| O[Show Error: Name Taken]
+    O --> C
+    
+    N -->|Yes - Unique| P[Create Company]
+    P --> Q[User Becomes Admin]
+    Q --> R[Company Profile Created]
+    
+    R --> S[Company Dashboard]
+    F --> S
+    
+    S --> T[Post Your First Job]
+    S --> U[Invite Team Members]
+    S --> V[Edit Company Profile]
+    S --> W[View Posted Jobs]
+    
+    T --> X[Job Creation Flow]
+    
+    U --> Y[Invite by Email]
+    Y --> Z[Enter Email Addresses]
+    Z --> AA[Send Invite Tokens]
+    
+    V --> AB[Edit Company Form]
+    AB --> AC[Update Name]
+    AB --> AD[Update Website]
+    AB --> AE[Update Description]
+    AB --> AF[Update Logo]
+    
+    AC --> AG[Save Changes]
+    AD --> AG
+    AE --> AG
+    AF --> AG
+    
+    W --> AH[Job List View]
+    AH --> AI[Active Jobs]
+    AH --> AJ[Inactive Jobs]
+    AH --> AK[Jobs Filled]
+    
+    style C fill:#f3e5f5
+    style P fill:#e8f5e9
+    style S fill:#fff9c4
+    style F fill:#e8f5e9

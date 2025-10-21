@@ -1,0 +1,92 @@
+graph TD
+    A[Login - Personal View] --> B[Personal Dashboard]
+    
+    B --> C[Quick Stats]
+    C --> D[Applications Submitted]
+    C --> E[Jobs Saved]
+    C --> F[Profile Completeness]
+    
+    B --> G[Recommended Jobs]
+    G --> H[Based on Tech Stack]
+    G --> I[Based on Industry Interests]
+    
+    B --> J[Recent Activity]
+    J --> K[Application Status Updates]
+    J --> L[New Job Matches]
+    
+    B --> M{User Actions}
+    M -->|Browse Jobs| N[Job Listings Page]
+    M -->|View Applications| O[My Applications]
+    M -->|Edit Profile| P[Profile Edit]
+    
+    N --> Q[Job Search & Filter]
+    Q --> R[Filter by Gig Type]
+    Q --> S[Filter by Tech Stack]
+    Q --> T[Search by Keyword]
+    
+    N --> U[Job Cards List]
+    U --> V{Select Job}
+    
+    V --> W[Job Detail Page]
+    W --> X[Job Information]
+    X --> Y[Title & Company]
+    X --> Z[Task Description]
+    X --> AA[Problem Description]
+    X --> AB[Required Skills]
+    X --> AC[Compensation Range]
+    X --> AD[Location/Remote]
+    
+    W --> AE[Company Information]
+    AE --> AF[Company Logo]
+    AE --> AG[Company Description]
+    AE --> AH[Company Website Link]
+    
+    W --> AI{Job Actions}
+    AI -->|Save Job| AJ[Add to Saved Jobs]
+    AI -->|Apply| AK[Application Flow]
+    AI -->|Share| AL[Copy Link/Share]
+    
+    AK --> AM{Already Applied?}
+    AM -->|Yes| AN[Show: Already Applied]
+    AM -->|No| AO[Application Form]
+    
+    AO --> AP[Review Profile Info]
+    AP --> AQ[Auto-filled from Profile]
+    AP --> AR[Resume Attached]
+    
+    AO --> AS[Optional Cover Message]
+    AS --> AT[Textarea - 500 chars]
+    
+    AO --> AU[Submit Application]
+    AU --> AV[Application Submitted]
+    AV --> AW[Confirmation Message]
+    AW --> AX[Redirect to My Applications]
+    
+    O --> AY[Applications List]
+    AY --> AZ[Filter by Status]
+    AZ --> BA[Pending]
+    AZ --> BB[Under Review]
+    AZ --> BC[Interview/Contacted]
+    AZ --> BD[Rejected]
+    
+    AY --> BE{Select Application}
+    BE --> BF[Application Detail]
+    BF --> BG[Job Information]
+    BF --> BH[Application Date]
+    BF --> BI[Current Status]
+    BF --> BJ[Cover Message Sent]
+    BF --> BK[Withdraw Application]
+    
+    P --> BL[Edit Profile Form]
+    BL --> BM[Update Tech Stack]
+    BL --> BN[Update Industry Interests]
+    BL --> BO[Update Resume]
+    BL --> BP[Update Links]
+    BL --> BQ[Update Bio]
+    BL --> BR[Save Changes]
+    
+    style B fill:#e8f5e9
+    style N fill:#e1f5ff
+    style W fill:#fff4e1
+    style AK fill:#f3e5f5
+    style O fill:#fff3e0

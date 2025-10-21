@@ -1,0 +1,168 @@
+<svg viewBox="0 0 1400 1400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1400" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1400" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Sin City Tech Jobs</text>
+  <text x="280" y="50" font-family="Arial, sans-serif" font-size="14" fill="#f44336" font-weight="bold">ADMIN PORTAL</text>
+  
+  <!-- Nav Tabs -->
+  <g transform="translate(600, 25)">
+    <rect width="120" height="35" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+    <text x="60" y="23" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">Metrics</text>
+    
+    <rect x="140" width="140" height="35" fill="#007bff" rx="4"/>
+    <text x="210" y="23" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Moderation</text>
+  </g>
+  
+  <!-- Logout -->
+  <g transform="translate(1250, 25)">
+    <rect width="100" height="35" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">Logout</text>
+  </g>
+  
+  <!-- Main Content -->
+  <g transform="translate(60, 120)">
+    
+    <!-- Page Title -->
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333">Moderation Queue</text>
+    <text x="0" y="55" font-family="Arial, sans-serif" font-size="14" fill="#666">Review flagged content and take action</text>
+    
+    <!-- Stats Bar -->
+    <g transform="translate(0, 90)">
+      <rect width="1280" height="70" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+      
+      <g transform="translate(30, 25)">
+        <rect width="140" height="30" fill="#ffebee" stroke="#f44336" stroke-width="1" rx="15"/>
+        <text x="70" y="20" font-family="Arial, sans-serif" font-size="14" fill="#c62828" text-anchor="middle" font-weight="bold">Pending (8)</text>
+      </g>
+      
+      <g transform="translate(190, 25)">
+        <rect width="140" height="30" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="15"/>
+        <text x="70" y="20" font-family="Arial, sans-serif" font-size="14" fill="#e65100" text-anchor="middle">Auto-Hidden (3)</text>
+      </g>
+      
+      <g transform="translate(350, 25)">
+        <rect width="150" height="30" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="15"/>
+        <text x="75" y="20" font-family="Arial, sans-serif" font-size="14" fill="#2e7d32" text-anchor="middle">Resolved (42)</text>
+      </g>
+    </g>
+    
+    <!-- Filter -->
+    <g transform="translate(0, 190)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" fill="#666">Show:</text>
+      <rect x="60" y="5" width="150" height="30" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+      <text x="75" y="25" font-family="Arial, sans-serif" font-size="13" fill="#333">All Pending ▼</text>
+    </g>
+    
+    <!-- Flagged Content List -->
+    <g transform="translate(0, 250)">
+      <rect width="1280" height="1050" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <!-- Flagged Item 1 - Auto-hidden -->
+      <g transform="translate(30, 30)">
+        <rect width="1220" height="140" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="6"/>
+        
+        <g transform="translate(20, 20)">
+          <!-- Alert Badge -->
+          <circle cx="20" cy="20" r="18" fill="#f44336"/>
+          <text x="20" y="27" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">!</text>
+          
+          <text x="55" y="15" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">Job Post: "Senior Full Stack Developer"</text>
+          <text x="55" y="35" font-family="Arial, sans-serif" font-size="13" fill="#666">Posted by: Acme Corp • Flagged 3 times</text>
+          
+          <!-- Auto-hidden badge -->
+          <rect x="55" y="45" width="140" height="24" fill="#ff9800" rx="12"/>
+          <text x="125" y="62" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">⚠️ AUTO-HIDDEN</text>
+          
+          <!-- Flags -->
+          <g transform="translate(55, 80)">
+            <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#666" font-weight="bold">Recent flags:</text>
+            <text x="0" y="18" font-family="Arial, sans-serif" font-size="12" fill="#555">"This looks like spam" - User #247</text>
+            <text x="0" y="33" font-family="Arial, sans-serif" font-size="12" fill="#555">"Fake job posting" - User #189</text>
+          </g>
+          
+          <!-- Actions -->
+          <g transform="translate(900, 40)">
+            <rect width="140" height="35" fill="#fff" stroke="#ccc" stroke-width="2" rx="4"/>
+            <text x="70" y="23" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle" font-weight="bold">View Details</text>
+            
+            <rect y="45" width="140" height="35" fill="#4caf50" rx="4"/>
+            <text x="70" y="68" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Ignore / Restore</text>
+            
+            <rect x="160" width="120" height="80" fill="#f44336" rx="4"/>
+            <text x="220" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Delete</text>
+          </g>
+        </g>
+      </g>
+      
+      <!-- Flagged Item 2 - Pending -->
+      <g transform="translate(30, 200)">
+        <rect width="1220" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+        
+        <g transform="translate(20, 20)">
+          <circle cx="20" cy="20" r="18" fill="#ff9800"/>
+          <text x="20" y="27" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+          
+          <text x="55" y="15" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">User Profile: "John Doe"</text>
+          <text x="55" y="35" font-family="Arial, sans-serif" font-size="13" fill="#666">User ID #123 • Flagged 2 times • Still visible</text>
+          
+          <!-- Flags -->
+          <g transform="translate(55, 55)">
+            <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#666" font-weight="bold">Recent flags:</text>
+            <text x="0" y="18" font-family="Arial, sans-serif" font-size="12" fill="#555">"Inappropriate content in profile" - User #98</text>
+          </g>
+          
+          <!-- Actions -->
+          <g transform="translate(900, 20)">
+            <rect width="140" height="35" fill="#fff" stroke="#ccc" stroke-width="2" rx="4"/>
+            <text x="70" y="23" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle" font-weight="bold">View Profile</text>
+            
+            <rect y="45" width="140" height="35" fill="#4caf50" rx="4"/>
+            <text x="70" y="68" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Ignore Flags</text>
+            
+            <rect x="160" width="120" height="80" fill="#f44336" rx="4"/>
+            <text x="220" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Delete Profile</text>
+          </g>
+        </g>
+      </g>
+      
+      <!-- Flagged Item 3 - Pending -->
+      <g transform="translate(30, 350)">
+        <rect width="1220" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+        
+        <g transform="translate(20, 20)">
+          <circle cx="20" cy="20" r="18" fill="#ff9800"/>
+          <text x="20" y="27" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">1</text>
+          
+          <text x="55" y="15" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">Job Post: "Marketing Manager"</text>
+          <text x="55" y="35" font-family="Arial, sans-serif" font-size="13" fill="#666">Posted by: StartupCo • Flagged 1 time • Still visible</text>
+          
+          <!-- Flags -->
+          <g transform="translate(55, 55)">
+            <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#666" font-weight="bold">Recent flags:</text>
+            <text x="0" y="18" font-family="Arial, sans-serif" font-size="12" fill="#555">"Misleading job description" - User #201</text>
+          </g>
+          
+          <!-- Actions -->
+          <g transform="translate(900, 20)">
+            <rect width="140" height="35" fill="#fff" stroke="#ccc" stroke-width="2" rx="4"/>
+            <text x="70" y="23" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle" font-weight="bold">View Details</text>
+            
+            <rect y="45" width="140" height="35" fill="#4caf50" rx="4"/>
+            <text x="70" y="68" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Ignore Flags</text>
+            
+            <rect x="160" width="120" height="80" fill="#f44336" rx="4"/>
+            <text x="220" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Delete</text>
+          </g>
+        </g>
+      </g>
+      
+    </g>
+    
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="1380" font-family="Arial, sans-serif" font-size="12" fill="#999">WIREFRAME - Admin Moderation Panel</text>
+</svg>

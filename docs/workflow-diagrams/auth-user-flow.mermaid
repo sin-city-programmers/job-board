@@ -1,0 +1,56 @@
+graph TD
+    A[Landing Page<br/>Recent Jobs Visible] --> B{User Action}
+    B -->|Browse Jobs| C[View Job Details]
+    B -->|Click Apply/Post Job| D[Login Required]
+    
+    C -->|Click Apply| D
+    
+    D --> E[OAuth Selection]
+    E -->|Select LinkedIn| F[LinkedIn OAuth]
+    E -->|Select Google| G[Google OAuth]
+    
+    F --> H{New or Existing?}
+    G --> H
+    
+    H -->|New User| I[Personal Profile Onboarding]
+    H -->|Existing User| J[Dashboard]
+    
+    I --> K{After Profile Creation}
+    K -->|Skip for Now| J
+    K -->|Create Company| L[Company Creation Flow]
+    K -->|Join Company via Invite Link| M[Accept Company Invite]
+    
+    L --> N[Company Admin Dashboard]
+    M --> O[Company Member Dashboard]
+    
+    J --> P{User Has Company?}
+    P -->|No| Q[Personal Dashboard Only]
+    P -->|Yes| R[Toggle: Personal/Company View]
+    
+    Q --> S[Browse Jobs]
+    Q --> T[My Applications]
+    Q --> U[Post Personal Gig]
+    Q --> V[Edit Profile]
+    
+    R --> W[Personal View]
+    R --> X[Company View]
+    
+    W --> S
+    W --> T
+    W --> V
+    
+    X --> Y[Post Company Job]
+    X --> Z[Manage Company Jobs]
+    X --> AA[View Applicants]
+    X --> AB[Invite Team Members]
+    X --> AC[Edit Company Profile]
+    
+    AB --> AD[Send Invite Email]
+    AD --> AE[Invitee Receives Link]
+    AE --> D
+    
+    style A fill:#e1f5ff
+    style I fill:#fff4e1
+    style L fill:#f3e5f5
+    style J fill:#e8f5e9
+    style R fill:#e8f5e9
