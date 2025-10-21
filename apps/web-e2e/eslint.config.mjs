@@ -5,6 +5,7 @@ export default [
   ...baseConfig,
   {
     files: ['**/*.ts', '**/*.js'],
+    ignores: ['out-tsc/**', 'test-output/**'],
     plugins: {
       playwright,
     },
