@@ -1,0 +1,65 @@
+graph TD
+    A[Job Management List] --> B[View Applicants for Job]
+    
+    B --> C[Applicants List Page]
+    C --> D[Filter by Status]
+    D --> E[New Applications]
+    D --> F[Reviewed]
+    D --> G[Contacted]
+    D --> H[Shortlisted]
+    D --> I[Rejected]
+    
+    C --> I{Select Applicant}
+    
+    I --> J[View Applicant Profile]
+    J --> K[Applicant Information]
+    K --> L[Name & Contact]
+    K --> M[Title/Role]
+    K --> N[Tech Stack]
+    K --> O[Industry Interests]
+    K --> P[Bio/About]
+    K --> Q[External Links]
+    K --> R[Resume/Portfolio]
+    
+    J --> S[Application Details]
+    S --> T[Applied Date]
+    S --> U[Application Status]
+    S --> V[Cover Message - Optional]
+    
+    J --> W[Applicant Actions]
+    W --> X[View Resume/Portfolio]
+    W --> Y[Change Status]
+    
+    X --> Z[Open Resume File]
+    Z --> AA[PDF/DOCX Viewer]
+    
+    Y --> AB{New Status}
+    AB -->|Mark as Reviewed| AC[Reviewed Status]
+    AB -->|Mark as Contacted| AD[Contacted Status + Timestamp]
+    AB -->|Add to Shortlist| AE[Shortlisted Status]
+    AB -->|Reject| AF[Reject Dialog]
+    AB -->|Move to New| AG[Reset to New]
+    
+    AF --> AH[Reject Reason - Optional]
+    AH --> AI[Confirm Rejection]
+    AI --> AJ[Applicant Marked Rejected]
+    
+    AD --> AK[Store Contacted Date]
+    AK --> AL[Display: Contacted on Date]
+    
+    C --> AM[Bulk Actions]
+    AM --> AN[Select Multiple Applicants]
+    AN --> AO[Mark as Reviewed]
+    AN --> AP[Mark as Contacted]
+    AN --> AQ[Export to CSV]
+    AN --> AR[Add to Shortlist]
+    
+    C --> AS[Search & Filter]
+    AS --> AT[Search by Name]
+    AS --> AU[Filter by Tech Stack]
+    AS --> AV[Filter by Application Date]
+    
+    style C fill:#e1f5ff
+    style J fill:#fff4e1
+    style W fill:#f3e5f5
+    style AM fill:#e8f5e9

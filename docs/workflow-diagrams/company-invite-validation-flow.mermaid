@@ -1,0 +1,67 @@
+graph TD
+    A[Company Admin Sends Invite] --> B[Enter Invitee Email]
+    B --> C[System Generates Invite]
+    C --> D[Create Unique Token]
+    C --> E[Set Expiration - 7 Days]
+    C --> F[Store: Email, Company, Token, Expiry]
+    
+    D --> G[Send Email to Invitee]
+    E --> G
+    F --> G
+    
+    G --> H[Email Contains Magic Link]
+    H --> I[Link Format: /invite/accept?token=xyz123]
+    
+    I --> J{Invitee Clicks Link}
+    
+    J --> K{Token Valid?}
+    K -->|Expired| L[Show Error: Link Expired]
+    K -->|Invalid| M[Show Error: Invalid Link]
+    K -->|Already Used| N[Show Error: Already Accepted]
+    
+    L --> O[Request New Invite]
+    M --> O
+    N --> P[Redirect to Login]
+    
+    K -->|Valid| Q{User Has Account?}
+    
+    Q -->|Yes - Logged In| R[Show Company Invite Context]
+    Q -->|Yes - Not Logged In| S[Require Login First]
+    Q -->|No Account| T[OAuth Signup Required]
+    
+    S --> U[Login via OAuth]
+    U --> V{Email Match?}
+    
+    T --> W[Signup via OAuth]
+    W --> V
+    
+    V -->|Email Matches Invite| R
+    V -->|Email Doesn't Match| X[Show Error: Wrong Email]
+    
+    X --> Y[Must use invited email]
+    Y --> Z[Or request new invite]
+    
+    R --> AA[Minimal Profile Setup]
+    AA --> AB[Show Company Badge]
+    AB --> AC[You've been invited to join XYZ Corp]
+    
+    AA --> AD[Name from OAuth]
+    AA --> AE[Email from OAuth - Must Match]
+    AA --> AF[Title Input]
+    
+    AD --> AG[Confirm Profile]
+    AE --> AG
+    AF --> AG
+    
+    AG --> AH[Mark Token as Used]
+    AH --> AI[Auto-join Company]
+    AI --> AJ[User becomes Company Member]
+    AJ --> AK[Company Dashboard Access]
+    
+    style G fill:#fff4e1
+    style R fill:#e1f5ff
+    style AI fill:#e8f5e9
+    style AK fill:#e8f5e9
+    style X fill:#ffebee
+    style L fill:#ffebee
+    style M fill:#ffebee

@@ -1,0 +1,109 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1200" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Sin City Tech Jobs</text>
+  
+  <!-- User Avatar in Header -->
+  <g transform="translate(1050, 25)">
+    <circle cx="15" cy="15" r="15" fill="#007bff"/>
+    <text x="15" y="20" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+    <text x="40" y="20" font-family="Arial, sans-serif" font-size="14" fill="#333">▼</text>
+  </g>
+  
+  <!-- Main Container -->
+  <g transform="translate(200, 150)">
+    
+    <!-- Title Section -->
+    <text x="400" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle">What brings you here today?</text>
+    <text x="400" y="35" font-family="Arial, sans-serif" font-size="16" fill="#666" text-anchor="middle">Choose how you'd like to get started</text>
+    
+    <!-- Job Seeker Card -->
+    <g transform="translate(50, 100)">
+      <rect width="320" height="450" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="12"/>
+      
+      <!-- Icon -->
+      <circle cx="160" cy="80" r="50" fill="#e3f2fd" stroke="#2196f3" stroke-width="3"/>
+      <text x="160" y="75" font-family="Arial, sans-serif" font-size="32" fill="#2196f3" text-anchor="middle">👤</text>
+      <text x="160" y="100" font-family="Arial, sans-serif" font-size="28" fill="#2196f3" text-anchor="middle">💼</text>
+      
+      <!-- Title -->
+      <text x="160" y="170" font-family="Arial, sans-serif" font-size="24" fill="#333" text-anchor="middle" font-weight="bold">Job Seeker</text>
+      
+      <!-- Description -->
+      <text x="160" y="210" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">I'm looking for opportunities</text>
+      <text x="160" y="230" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">in the Las Vegas tech scene</text>
+      
+      <!-- Features List -->
+      <g transform="translate(40, 260)">
+        <circle cx="0" cy="0" r="4" fill="#4caf50"/>
+        <text x="15" y="5" font-family="Arial, sans-serif" font-size="13" fill="#555">Browse job listings</text>
+        
+        <circle cx="0" cy="30" r="4" fill="#4caf50"/>
+        <text x="15" y="35" font-family="Arial, sans-serif" font-size="13" fill="#555">Apply to opportunities</text>
+        
+        <circle cx="0" cy="60" r="4" fill="#4caf50"/>
+        <text x="15" y="65" font-family="Arial, sans-serif" font-size="13" fill="#555">Build your profile</text>
+        
+        <circle cx="0" cy="90" r="4" fill="#4caf50"/>
+        <text x="15" y="95" font-family="Arial, sans-serif" font-size="13" fill="#555">Connect with employers</text>
+      </g>
+      
+      <!-- Button -->
+      <rect x="40" y="380" width="240" height="50" fill="#007bff" rx="6"/>
+      <text x="160" y="410" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">I'm Looking for Work</text>
+    </g>
+    
+    <!-- Employer Card -->
+    <g transform="translate(430, 100)">
+      <rect width="320" height="450" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="12"/>
+      
+      <!-- Icon -->
+      <circle cx="160" cy="80" r="50" fill="#f3e5f5" stroke="#9c27b0" stroke-width="3"/>
+      <text x="160" y="85" font-family="Arial, sans-serif" font-size="32" fill="#9c27b0" text-anchor="middle">🏢</text>
+      <text x="160" y="105" font-family="Arial, sans-serif" font-size="24" fill="#9c27b0" text-anchor="middle">+</text>
+      
+      <!-- Title -->
+      <text x="160" y="170" font-family="Arial, sans-serif" font-size="24" fill="#333" text-anchor="middle" font-weight="bold">Employer</text>
+      
+      <!-- Description -->
+      <text x="160" y="210" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">I'm hiring talent for</text>
+      <text x="160" y="230" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">my company or project</text>
+      
+      <!-- Features List -->
+      <g transform="translate(40, 260)">
+        <circle cx="0" cy="0" r="4" fill="#4caf50"/>
+        <text x="15" y="5" font-family="Arial, sans-serif" font-size="13" fill="#555">Post job openings</text>
+        
+        <circle cx="0" cy="30" r="4" fill="#4caf50"/>
+        <text x="15" y="35" font-family="Arial, sans-serif" font-size="13" fill="#555">Review applicants</text>
+        
+        <circle cx="0" cy="60" r="4" fill="#4caf50"/>
+        <text x="15" y="65" font-family="Arial, sans-serif" font-size="13" fill="#555">Manage company profile</text>
+        
+        <circle cx="0" cy="90" r="4" fill="#4caf50"/>
+        <text x="15" y="95" font-family="Arial, sans-serif" font-size="13" fill="#555">Invite team members</text>
+      </g>
+      
+      <!-- Button -->
+      <rect x="40" y="380" width="240" height="50" fill="#28a745" rx="6"/>
+      <text x="160" y="410" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">I'm Hiring Talent</text>
+    </g>
+    
+    <!-- Skip Option -->
+    <text x="400" y="610" font-family="Arial, sans-serif" font-size="14" fill="#999" text-anchor="middle">Not sure yet? You can always choose later from your dashboard</text>
+    
+  </g>
+  
+  <!-- Note Box -->
+  <g transform="translate(200, 800)">
+    <rect width="800" height="60" fill="#fff9c4" stroke="#f57f17" stroke-width="2" rx="6"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="13" fill="#f57f17" font-weight="bold">💡 Note:</text>
+    <text x="20" y="45" font-family="Arial, sans-serif" font-size="12" fill="#f57f17">Users without a company affiliation will see this screen each time they log in until they complete one of these paths.</text>
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="880" font-family="Arial, sans-serif" font-size="12" fill="#999">WIREFRAME - Intent Selection (Shown after minimal profile OR on login if no company)</text>
+</svg>

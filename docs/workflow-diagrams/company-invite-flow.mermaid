@@ -1,0 +1,55 @@
+graph TD
+    A[User Completes Personal Profile] --> B{Company Options}
+    
+    B -->|Skip for Now| C[Personal Dashboard]
+    B -->|Create New Company| D[Company Creation Form]
+    B -->|Has Invite Link| E[Accept Company Invite]
+    
+    D --> F[Fill Company Details]
+    F --> G[Company Name]
+    F --> H[Website]
+    F --> I[Description]
+    F --> J[Logo - Optional]
+    
+    G --> K[Submit Company]
+    H --> K
+    I --> K
+    J --> K
+    
+    K --> L[User becomes Company Admin]
+    L --> M[Company Dashboard]
+    
+    M --> N[Invite Team Members]
+    M --> O[Post Company Jobs]
+    M --> P[Manage Company Profile]
+    
+    N --> Q[Enter Email Addresses]
+    Q --> R[Send Invite Emails]
+    R --> S[Invitee Receives Email]
+    
+    S --> T{Invitee Action}
+    T -->|Clicks Invite Link| U{Has Account?}
+    T -->|Ignores| V[Invite Pending]
+    
+    U -->|Yes| W[Login & Auto-Join Company]
+    U -->|No| X[Sign Up & Auto-Join Company]
+    
+    W --> Y[Member Added to Company]
+    X --> Y
+    
+    Y --> Z[Company Member Dashboard]
+    Z --> AA[Can Post Jobs for Company]
+    Z --> AB[Can Edit Company Profile]
+    Z --> AC[Personal Profile Separate]
+    
+    E --> AD[Validate Invite Token]
+    AD --> U
+    
+    C --> AE[Can Create Company Later]
+    AE --> D
+    
+    style D fill:#f3e5f5
+    style L fill:#e8f5e9
+    style Y fill:#e8f5e9
+    style M fill:#fff9c4
+    style Z fill:#fff9c4

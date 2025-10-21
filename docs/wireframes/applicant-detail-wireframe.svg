@@ -1,0 +1,214 @@
+<svg viewBox="0 0 1400 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1200" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1400" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Sin City Tech Jobs</text>
+  
+  <!-- View Toggle -->
+  <g transform="translate(800, 25)">
+    <rect width="200" height="35" fill="#f0f8ff" stroke="#2196f3" stroke-width="1" rx="18"/>
+    <rect x="2" y="2" width="98" height="31" fill="#007bff" rx="16"/>
+    <text x="51" y="23" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Company</text>
+    <text x="151" y="23" font-family="Arial, sans-serif" font-size="13" fill="#2196f3" text-anchor="middle" font-weight="bold">Personal</text>
+  </g>
+  
+  <!-- User Menu -->
+  <g transform="translate(1250, 25)">
+    <circle cx="15" cy="15" r="15" fill="#007bff"/>
+    <text x="15" y="20" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+  </g>
+  
+  <!-- Sidebar -->
+  <g transform="translate(0, 80)">
+    <rect width="250" height="1120" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+    
+    <!-- Company Info -->
+    <g transform="translate(30, 30)">
+      <circle cx="35" cy="35" r="35" fill="#4caf50"/>
+      <text x="35" y="45" font-family="Arial, sans-serif" font-size="24" fill="#fff" text-anchor="middle" font-weight="bold">AC</text>
+      
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">Acme Corp</text>
+      <text x="90" y="50" font-family="Arial, sans-serif" font-size="12" fill="#666">Admin</text>
+    </g>
+    
+    <!-- Navigation -->
+    <g transform="translate(0, 120)">
+      <text x="30" y="30" font-family="Arial, sans-serif" font-size="15" fill="#666">📊 Dashboard</text>
+      <text x="30" y="80" font-family="Arial, sans-serif" font-size="15" fill="#666">📝 Job Postings</text>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="15" fill="#666">👥 Team Members</text>
+      
+      <!-- Active Item -->
+      <rect y="150" width="250" height="50" fill="#e3f2fd"/>
+      <rect y="150" width="4" height="50" fill="#007bff"/>
+      <text x="30" y="180" font-family="Arial, sans-serif" font-size="15" fill="#007bff" font-weight="bold">✉️ Applicants</text>
+      
+      <text x="30" y="230" font-family="Arial, sans-serif" font-size="15" fill="#666">⚙️ Company Profile</text>
+    </g>
+  </g>
+  
+  <!-- Main Content Area -->
+  <g transform="translate(270, 100)">
+    
+    <!-- Breadcrumb -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="13" fill="#999">Applicants > Senior Full Stack Developer > Sarah Martinez</text>
+    
+    <!-- Action Bar -->
+    <g transform="translate(0, 45)">
+      <rect width="1100" height="70" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <rect x="20" y="15" width="200" height="40" fill="#fff" stroke="#ccc" stroke-width="2" rx="6"/>
+      <text x="120" y="40" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle" font-weight="bold">← Back to Applicants</text>
+      
+      <!-- Status Dropdown -->
+      <rect x="680" y="15" width="180" height="40" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="6"/>
+      <text x="770" y="40" font-family="Arial, sans-serif" font-size="14" fill="#e65100" text-anchor="middle" font-weight="bold">Status: Reviewed ▼</text>
+      
+      <!-- Last Status Change -->
+      <text x="880" y="40" font-family="Arial, sans-serif" font-size="12" fill="#999">Changed 1 hour ago</text>
+    </g>
+    
+    <!-- Profile Card -->
+    <g transform="translate(0, 145)">
+      <rect width="1100" height="280" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <!-- Header Section -->
+      <g transform="translate(0, 0)">
+        <rect width="1100" height="100" fill="#f8f9fa" rx="8 8 0 0"/>
+        
+        <!-- Avatar -->
+        <circle cx="70" cy="50" r="40" fill="#2196f3"/>
+        <text x="70" y="60" font-family="Arial, sans-serif" font-size="28" fill="#fff" text-anchor="middle" font-weight="bold">SM</text>
+        
+        <!-- Basic Info -->
+        <text x="130" y="40" font-family="Arial, sans-serif" font-size="24" fill="#333" font-weight="bold">Sarah Martinez</text>
+        <text x="130" y="65" font-family="Arial, sans-serif" font-size="16" fill="#666">Title: Senior Full Stack Developer</text>
+        <text x="130" y="85" font-family="Arial, sans-serif" font-size="13" fill="#999">📍 Las Vegas, NV</text>
+        
+        <!-- Application Info -->
+        <text x="950" y="40" font-family="Arial, sans-serif" font-size="13" fill="#007bff" font-weight="bold" text-anchor="end">Applied For:</text>
+        <text x="950" y="58" font-family="Arial, sans-serif" font-size="13" fill="#007bff" text-anchor="end">Senior Full Stack Developer</text>
+        <text x="950" y="76" font-family="Arial, sans-serif" font-size="13" fill="#999" text-anchor="end">Applied 2 hours ago</text>
+      </g>
+      
+      <!-- Contact Info -->
+      <g transform="translate(40, 120)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#007bff" style="text-decoration: underline; cursor: pointer;">📧 sarah.m@email.com</text>
+        <text x="300" y="0" font-family="Arial, sans-serif" font-size="14" fill="#007bff" style="text-decoration: underline; cursor: pointer;">📱 (702) 555-0123</text>
+        <text x="600" y="0" font-family="Arial, sans-serif" font-size="14" fill="#007bff" style="text-decoration: underline; cursor: pointer;">💼 linkedin.com/in/sarahm</text>
+      </g>
+      
+      <!-- Tech Stack -->
+      <g transform="translate(40, 160)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Tech Stack:</text>
+        
+        <g transform="translate(0, 15)">
+          <rect width="70" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+          <text x="35" y="19" font-family="Arial, sans-serif" font-size="12" fill="#1565c0" text-anchor="middle">React</text>
+          
+          <rect x="80" width="80" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+          <text x="120" y="19" font-family="Arial, sans-serif" font-size="12" fill="#1565c0" text-anchor="middle">Node.js</text>
+          
+          <rect x="170" width="100" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+          <text x="220" y="19" font-family="Arial, sans-serif" font-size="12" fill="#1565c0" text-anchor="middle">PostgreSQL</text>
+          
+          <rect x="280" width="60" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+          <text x="310" y="19" font-family="Arial, sans-serif" font-size="12" fill="#1565c0" text-anchor="middle">AWS</text>
+          
+          <rect x="350" width="100" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+          <text x="400" y="19" font-family="Arial, sans-serif" font-size="12" fill="#1565c0" text-anchor="middle">TypeScript</text>
+          
+          <rect x="460" width="80" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+          <text x="500" y="19" font-family="Arial, sans-serif" font-size="12" fill="#1565c0" text-anchor="middle">Docker</text>
+        </g>
+      </g>
+      
+      <!-- Industry Interests -->
+      <g transform="translate(40, 220)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Industry Interests:</text>
+        
+        <g transform="translate(0, 15)">
+          <rect width="80" height="28" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="14"/>
+          <text x="40" y="19" font-family="Arial, sans-serif" font-size="12" fill="#e65100" text-anchor="middle">FinTech</text>
+          
+          <rect x="90" width="70" height="28" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="14"/>
+          <text x="125" y="19" font-family="Arial, sans-serif" font-size="12" fill="#e65100" text-anchor="middle">SaaS</text>
+        </g>
+      </g>
+      
+    </g>
+    
+    <!-- About Section -->
+    <g transform="translate(0, 455)">
+      <rect width="1100" height="200" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <text x="40" y="40" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">About</text>
+      <rect x="40" y="50" width="100" height="1" fill="#e0e0e0"/>
+      
+      <text x="40" y="80" font-family="Arial, sans-serif" font-size="14" fill="#555">Passionate full stack developer with 7 years of experience building scalable web applications.</text>
+      <text x="40" y="100" font-family="Arial, sans-serif" font-size="14" fill="#555">Love working with modern JavaScript frameworks and cloud technologies. Previously led the</text>
+      <text x="40" y="120" font-family="Arial, sans-serif" font-size="14" fill="#555">development of a fintech platform that processed $10M+ in transactions. Always eager to learn</text>
+      <text x="40" y="140" font-family="Arial, sans-serif" font-size="14" fill="#555">and take on new challenges in the tech industry.</text>
+    </g>
+    
+    <!-- Resume Section -->
+    <g transform="translate(0, 685)">
+      <rect width="1100" height="140" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <text x="40" y="40" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Resume &amp; Portfolio</text>
+      <rect x="40" y="50" width="150" height="1" fill="#e0e0e0"/>
+      
+      <!-- Resume File -->
+      <g transform="translate(40, 75)">
+        <rect width="500" height="50" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+        
+        <rect x="15" y="10" width="35" height="30" fill="#dc3545" rx="2"/>
+        <text x="32" y="30" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">PDF</text>
+        
+        <text x="65" y="25" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Sarah_Martinez_Resume.pdf</text>
+        <text x="65" y="40" font-family="Arial, sans-serif" font-size="12" fill="#999">2.4 MB • Uploaded 2 hours ago</text>
+        
+        <rect x="390" y="10" width="90" height="30" fill="#007bff" rx="4"/>
+        <text x="435" y="30" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">View/Download</text>
+      </g>
+    </g>
+    
+    <!-- External Links Section -->
+    <g transform="translate(0, 855)">
+      <rect width="1100" height="140" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <text x="40" y="40" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Links</text>
+      <rect x="40" y="50" width="50" height="1" fill="#e0e0e0"/>
+      
+      <g transform="translate(40, 75)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#007bff" style="text-decoration: underline; cursor: pointer;">🔗 github.com/sarahm</text>
+        <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" fill="#007bff" style="text-decoration: underline; cursor: pointer;">💼 linkedin.com/in/sarahm</text>
+        <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" fill="#007bff" style="text-decoration: underline; cursor: pointer;">🌐 sarahmartinez.dev</text>
+      </g>
+    </g>
+    
+    <!-- Action Buttons -->
+    <g transform="translate(0, 1025)">
+      <rect width="1100" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <g transform="translate(40, 20)">
+        <rect width="180" height="40" fill="#fff" stroke="#ccc" stroke-width="2" rx="6"/>
+        <text x="90" y="26" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle" font-weight="bold">Mark as Reviewed</text>
+        
+        <rect x="200" width="180" height="40" fill="#fff" stroke="#ccc" stroke-width="2" rx="6"/>
+        <text x="290" y="26" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle" font-weight="bold">Mark as Contacted</text>
+        
+        <rect x="400" width="180" height="40" fill="#fff" stroke="#ccc" stroke-width="2" rx="6"/>
+        <text x="490" y="26" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle" font-weight="bold">Add to Shortlist</text>
+        
+        <rect x="600" width="150" height="40" fill="#fff" stroke="#f44336" stroke-width="2" rx="6"/>
+        <text x="675" y="26" font-family="Arial, sans-serif" font-size="14" fill="#f44336" text-anchor="middle" font-weight="bold">Reject</text>
+      </g>
+    </g>
+    
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="1180" font-family="Arial, sans-serif" font-size="12" fill="#999">WIREFRAME - Applicant Detail View (Company Side)</text>
+</svg>

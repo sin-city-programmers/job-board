@@ -1,0 +1,285 @@
+<svg viewBox="0 0 1400 1400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1400" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1400" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Sin City Tech Jobs</text>
+  
+  <!-- View Toggle (only shown if user has company) -->
+  <g transform="translate(800, 25)">
+    <rect width="200" height="35" fill="#f0f8ff" stroke="#2196f3" stroke-width="1" rx="18"/>
+    <rect x="102" y="2" width="96" height="31" fill="#007bff" rx="16"/>
+    <text x="51" y="23" font-family="Arial, sans-serif" font-size="13" fill="#2196f3" text-anchor="middle" font-weight="bold">Company</text>
+    <text x="150" y="23" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Personal</text>
+  </g>
+  
+  <!-- User Menu -->
+  <g transform="translate(1250, 25)">
+    <circle cx="15" cy="15" r="15" fill="#007bff"/>
+    <text x="15" y="20" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+    <text x="40" y="20" font-family="Arial, sans-serif" font-size="14" fill="#333">▼</text>
+  </g>
+  
+  <!-- Sidebar -->
+  <g transform="translate(0, 80)">
+    <rect width="250" height="1320" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+    
+    <!-- User Info -->
+    <g transform="translate(30, 30)">
+      <circle cx="35" cy="35" r="35" fill="#007bff"/>
+      <text x="35" y="45" font-family="Arial, sans-serif" font-size="24" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+      
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">John Smith</text>
+      <text x="90" y="50" font-family="Arial, sans-serif" font-size="12" fill="#666">Full Stack Developer</text>
+    </g>
+    
+    <!-- Navigation -->
+    <g transform="translate(0, 120)">
+      <!-- Active Item -->
+      <rect y="0" width="250" height="50" fill="#e3f2fd"/>
+      <rect y="0" width="4" height="50" fill="#007bff"/>
+      <text x="30" y="30" font-family="Arial, sans-serif" font-size="15" fill="#007bff" font-weight="bold">🏠 Dashboard</text>
+      
+      <text x="30" y="80" font-family="Arial, sans-serif" font-size="15" fill="#666">🔍 Browse Jobs</text>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="15" fill="#666">📋 My Applications</text>
+      <text x="30" y="180" font-family="Arial, sans-serif" font-size="15" fill="#666">💾 Saved Jobs</text>
+      <text x="30" y="230" font-family="Arial, sans-serif" font-size="15" fill="#666">👤 My Profile</text>
+    </g>
+  </g>
+  
+  <!-- Main Content Area -->
+  <g transform="translate(270, 100)">
+    
+    <!-- Welcome Header -->
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333">Welcome back, John! 👋</text>
+    <text x="0" y="55" font-family="Arial, sans-serif" font-size="14" fill="#666">Here's what's happening with your job search</text>
+    
+    <!-- Stats Cards -->
+    <g transform="translate(0, 90)">
+      <!-- Applications Submitted -->
+      <g>
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+        <circle cx="40" cy="40" r="25" fill="#e3f2fd"/>
+        <text x="40" y="48" font-family="Arial, sans-serif" font-size="24" fill="#2196f3" text-anchor="middle">📋</text>
+        
+        <text x="85" y="35" font-family="Arial, sans-serif" font-size="14" fill="#666">Applications Submitted</text>
+        <text x="85" y="65" font-family="Arial, sans-serif" font-size="36" fill="#333" font-weight="bold">12</text>
+        
+        <text x="20" y="105" font-family="Arial, sans-serif" font-size="12" fill="#4caf50">3 new responses</text>
+      </g>
+      
+      <!-- Saved Jobs -->
+      <g transform="translate(380, 0)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+        <circle cx="40" cy="40" r="25" fill="#fff3e0"/>
+        <text x="40" y="48" font-family="Arial, sans-serif" font-size="24" fill="#ff9800" text-anchor="middle">💾</text>
+        
+        <text x="85" y="35" font-family="Arial, sans-serif" font-size="14" fill="#666">Saved Jobs</text>
+        <text x="85" y="65" font-family="Arial, sans-serif" font-size="36" fill="#333" font-weight="bold">5</text>
+        
+        <text x="20" y="105" font-family="Arial, sans-serif" font-size="12" fill="#666">Ready to apply</text>
+      </g>
+      
+      <!-- Active Jobs -->
+      <g transform="translate(760, 0)">
+        <rect width="340" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+        <circle cx="40" cy="40" r="25" fill="#e8f5e9"/>
+        <text x="40" y="48" font-family="Arial, sans-serif" font-size="24" fill="#4caf50" text-anchor="middle">📝</text>
+        
+        <text x="85" y="35" font-family="Arial, sans-serif" font-size="14" fill="#666">Active Jobs Available</text>
+        <text x="85" y="65" font-family="Arial, sans-serif" font-size="36" fill="#333" font-weight="bold">47</text>
+        
+        <text x="20" y="105" font-family="Arial, sans-serif" font-size="12" fill="#666">In Las Vegas area</text>
+      </g>
+    </g>
+    
+    <!-- Recommended Jobs Section -->
+    <g transform="translate(0, 250)">
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">Recent Job Postings</text>
+        <text x="1000" y="0" font-family="Arial, sans-serif" font-size="14" fill="#007bff" text-anchor="end" font-weight="bold">View All Jobs →</text>
+      </g>
+      
+      <rect y="20" width="1100" height="1050" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <!-- Job 1 -->
+      <g transform="translate(30, 50)">
+        <circle cx="30" cy="30" r="30" fill="#4caf50"/>
+        <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">AC</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Senior Full Stack Developer</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Acme Corp • Full-Time • Las Vegas, NV</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="12" fill="#999">Posted 2 days ago</text>
+        
+        <text x="80" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">Build scalable web applications using modern frameworks...</text>
+        
+        <!-- Tags -->
+        <g transform="translate(80, 100)">
+          <rect width="70" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="35" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">React</text>
+          
+          <rect x="80" width="80" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="120" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">Node.js</text>
+          
+          <rect x="170" width="100" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="220" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">PostgreSQL</text>
+        </g>
+        
+        <!-- Actions -->
+        <g transform="translate(730, 100)">
+          <rect width="120" height="32" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+          <text x="60" y="21" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">💾 Save</text>
+          
+          <rect x="140" width="120" height="32" fill="#007bff" rx="4"/>
+          <text x="200" y="21" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Apply Now</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="170" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Job 2 -->
+      <g transform="translate(30, 200)">
+        <circle cx="30" cy="30" r="30" fill="#9c27b0"/>
+        <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">TS</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">DevOps Engineer</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">TechStart Inc • Part-Time • Remote</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="12" fill="#999">Posted 3 days ago</text>
+        
+        <text x="80" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">Manage cloud infrastructure and CI/CD pipelines...</text>
+        
+        <!-- Tags -->
+        <g transform="translate(80, 100)">
+          <rect width="60" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="30" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">AWS</text>
+          
+          <rect x="70" width="80" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="110" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">Docker</text>
+          
+          <rect x="160" width="110" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="215" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">Kubernetes</text>
+        </g>
+        
+        <!-- Actions -->
+        <g transform="translate(730, 100)">
+          <rect width="120" height="32" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+          <text x="60" y="21" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">💾 Save</text>
+          
+          <rect x="140" width="120" height="32" fill="#007bff" rx="4"/>
+          <text x="200" y="21" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Apply Now</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="320" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Job 3 -->
+      <g transform="translate(30, 350)">
+        <circle cx="30" cy="30" r="30" fill="#ff9800"/>
+        <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">VG</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Product Manager</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Vegas Gaming Co • Full-Time • On-site</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="12" fill="#999">Posted 5 days ago</text>
+        
+        <text x="80" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">Lead product strategy and work with engineering teams...</text>
+        
+        <!-- Tags -->
+        <g transform="translate(80, 100)">
+          <rect width="70" height="24" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="12"/>
+          <text x="35" y="16" font-family="Arial, sans-serif" font-size="11" fill="#e65100" text-anchor="middle">Agile</text>
+          
+          <rect x="80" width="70" height="24" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="12"/>
+          <text x="115" y="16" font-family="Arial, sans-serif" font-size="11" fill="#e65100" text-anchor="middle">SaaS</text>
+        </g>
+        
+        <!-- Actions -->
+        <g transform="translate(730, 100)">
+          <rect width="120" height="32" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+          <text x="60" y="21" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">💾 Save</text>
+          
+          <rect x="140" width="120" height="32" fill="#007bff" rx="4"/>
+          <text x="200" y="21" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Apply Now</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="470" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Job 4 -->
+      <g transform="translate(30, 500)">
+        <circle cx="30" cy="30" r="30" fill="#e91e63"/>
+        <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">SI</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">UX/UI Designer</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">StartupInc • Freelance • Remote</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="12" fill="#999">Posted 1 week ago</text>
+        
+        <text x="80" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">Design beautiful and intuitive user interfaces for mobile apps...</text>
+        
+        <!-- Tags -->
+        <g transform="translate(80, 100)">
+          <rect width="70" height="24" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="12"/>
+          <text x="35" y="16" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2" text-anchor="middle">Figma</text>
+          
+          <rect x="80" width="110" height="24" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="12"/>
+          <text x="135" y="16" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2" text-anchor="middle">Mobile Design</text>
+        </g>
+        
+        <!-- Actions -->
+        <g transform="translate(730, 100)">
+          <rect width="120" height="32" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+          <text x="60" y="21" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">💾 Save</text>
+          
+          <rect x="140" width="120" height="32" fill="#007bff" rx="4"/>
+          <text x="200" y="21" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Apply Now</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="620" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Job 5 -->
+      <g transform="translate(30, 650)">
+        <circle cx="30" cy="30" r="30" fill="#3f51b5"/>
+        <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">BC</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Backend Developer</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Blue Corp • Full-Time • Hybrid</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="12" fill="#999">Posted 1 week ago</text>
+        
+        <text x="80" y="85" font-family="Arial, sans-serif" font-size="14" fill="#555">Build robust APIs and microservices architecture...</text>
+        
+        <!-- Tags -->
+        <g transform="translate(80, 100)">
+          <rect width="80" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="40" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">Node.js</text>
+          
+          <rect x="90" width="100" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="140" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">PostgreSQL</text>
+          
+          <rect x="200" width="80" height="24" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="12"/>
+          <text x="240" y="16" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">GraphQL</text>
+        </g>
+        
+        <!-- Actions -->
+        <g transform="translate(730, 100)">
+          <rect width="120" height="32" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+          <text x="60" y="21" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">💾 Save</text>
+          
+          <rect x="140" width="120" height="32" fill="#007bff" rx="4"/>
+          <text x="200" y="21" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Apply Now</text>
+        </g>
+      </g>
+      
+      <!-- View More -->
+      <g transform="translate(0, 800)">
+        <rect x="30" width="1040" height="1" fill="#e0e0e0"/>
+        <text x="550" y="50" font-family="Arial, sans-serif" font-size="14" fill="#007bff" text-anchor="middle" font-weight="bold">View More Jobs →</text>
+      </g>
+      
+    </g>
+    
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="1380" font-family="Arial, sans-serif" font-size="12" fill="#999">WIREFRAME - Personal Dashboard (Job Seeker View)</text>
+</svg>

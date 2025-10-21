@@ -1,0 +1,81 @@
+graph TD
+    A[OAuth Success] --> B{User Check}
+    B -->|Existing User| C{Has Company?}
+    B -->|New User| D[Minimal Profile Creation]
+    
+    C -->|Yes| E[Dashboard - Company View]
+    C -->|No| F[Intent Selection Screen]
+    
+    D --> G[Pre-filled Info]
+    G --> H[Avatar from OAuth]
+    G --> I[Name from OAuth]
+    G --> J[Email from OAuth]
+    
+    D --> K[User Adds Title]
+    K --> L[Free Text Input]
+    L --> M[Examples: Senior Developer, Designer, CTO]
+    
+    K --> N[Confirm/Save Minimal Profile]
+    N --> F
+    
+    F --> O{User Intent}
+    O -->|Job Seeker| P[Full Profile Onboarding]
+    O -->|Employer| Q[Company Path]
+    
+    P --> R[Tech Stack Selection]
+    P --> S[Industry Interests]
+    P --> T[Talent Type/Role]
+    P --> U[Resume/Portfolio Upload]
+    P --> V[External Links]
+    P --> W[Bio/About Me]
+    
+    R --> X[Save Full Profile]
+    S --> X
+    T --> X
+    U --> X
+    V --> X
+    W --> X
+    
+    X --> Y[Job Seeker Dashboard]
+    Y --> Z[Browse Jobs]
+    Y --> AA[Apply to Jobs]
+    Y --> AB[View Applications]
+    
+    Q --> AC{Company Action}
+    AC -->|Create New Company| AD[Company Creation Form]
+    AC -->|Have Invite Link| AE[Join Existing Company]
+    
+    AD --> AF[Company Details]
+    AF --> AG[Company Name]
+    AF --> AH[Website]
+    AF --> AI[Description]
+    AF --> AJ[Logo - Optional]
+    
+    AG --> AK[Save Company]
+    AH --> AK
+    AI --> AK
+    AJ --> AK
+    
+    AK --> AL[User becomes Admin]
+    AL --> AM[Company Dashboard]
+    
+    AE --> AN[Validate Invite Token]
+    AN --> AO[Auto-join Company]
+    AO --> AP[Company Member Dashboard]
+    
+    AM --> AQ[Post Jobs]
+    AM --> AR[Invite Team Members]
+    AM --> AS[Manage Company]
+    
+    AP --> AQ
+    AP --> AS
+    
+    AQ --> AT[Can Always Fill Profile Later]
+    AT --> AU[To Apply for Jobs as Individual]
+    
+    style D fill:#e1f5ff
+    style F fill:#fff4e1
+    style P fill:#e8f5e9
+    style Q fill:#f3e5f5
+    style AM fill:#fff9c4
+    style AP fill:#fff9c4

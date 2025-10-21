@@ -1,0 +1,220 @@
+<svg viewBox="0 0 1400 1100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1100" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1400" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Sin City Tech Jobs</text>
+  
+  <!-- View Toggle -->
+  <g transform="translate(800, 25)">
+    <rect width="200" height="35" fill="#f0f8ff" stroke="#2196f3" stroke-width="1" rx="18"/>
+    <rect x="2" y="2" width="98" height="31" fill="#007bff" rx="16"/>
+    <text x="51" y="23" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Company</text>
+    <text x="151" y="23" font-family="Arial, sans-serif" font-size="13" fill="#2196f3" text-anchor="middle" font-weight="bold">Personal</text>
+  </g>
+  
+  <!-- User Menu -->
+  <g transform="translate(1250, 25)">
+    <circle cx="15" cy="15" r="15" fill="#007bff"/>
+    <text x="15" y="20" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+  </g>
+  
+  <!-- Sidebar -->
+  <g transform="translate(0, 80)">
+    <rect width="250" height="1020" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+    
+    <!-- Company Info -->
+    <g transform="translate(30, 30)">
+      <circle cx="35" cy="35" r="35" fill="#4caf50"/>
+      <text x="35" y="45" font-family="Arial, sans-serif" font-size="24" fill="#fff" text-anchor="middle" font-weight="bold">AC</text>
+      
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">Acme Corp</text>
+      <text x="90" y="50" font-family="Arial, sans-serif" font-size="12" fill="#666">Admin</text>
+    </g>
+    
+    <!-- Navigation -->
+    <g transform="translate(0, 120)">
+      <text x="30" y="30" font-family="Arial, sans-serif" font-size="15" fill="#666">📊 Dashboard</text>
+      <text x="30" y="80" font-family="Arial, sans-serif" font-size="15" fill="#666">📝 Job Postings</text>
+      
+      <!-- Active Item -->
+      <rect y="100" width="250" height="50" fill="#e3f2fd"/>
+      <rect y="100" width="4" height="50" fill="#007bff"/>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="15" fill="#007bff" font-weight="bold">👥 Team Members</text>
+      
+      <text x="30" y="180" font-family="Arial, sans-serif" font-size="15" fill="#666">✉️ Applicants</text>
+      <text x="30" y="230" font-family="Arial, sans-serif" font-size="15" fill="#666">⚙️ Company Profile</text>
+    </g>
+  </g>
+  
+  <!-- Main Content Area -->
+  <g transform="translate(270, 100)">
+    
+    <!-- Page Header -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333">Team Members</text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="14" fill="#666">Manage who can post jobs and edit company information</text>
+      
+      <rect x="920" y="10" width="180" height="45" fill="#28a745" rx="6"/>
+      <text x="1010" y="38" font-family="Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold">+ Invite Member</text>
+    </g>
+    
+    <!-- Stats -->
+    <g transform="translate(0, 100)">
+      <rect width="1100" height="80" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+      
+      <g transform="translate(40, 30)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#666">Total Members</text>
+        <text x="0" y="25" font-family="Arial, sans-serif" font-size="24" fill="#333" font-weight="bold">3</text>
+      </g>
+      
+      <line x1="200" y1="20" x2="200" y2="60" stroke="#e0e0e0" stroke-width="1"/>
+      
+      <g transform="translate(240, 30)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#666">Admins</text>
+        <text x="0" y="25" font-family="Arial, sans-serif" font-size="24" fill="#007bff" font-weight="bold">1</text>
+      </g>
+      
+      <line x1="400" y1="20" x2="400" y2="60" stroke="#e0e0e0" stroke-width="1"/>
+      
+      <g transform="translate(440, 30)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#666">Members</text>
+        <text x="0" y="25" font-family="Arial, sans-serif" font-size="24" fill="#4caf50" font-weight="bold">2</text>
+      </g>
+      
+      <line x1="600" y1="20" x2="600" y2="60" stroke="#e0e0e0" stroke-width="1"/>
+      
+      <g transform="translate(640, 30)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#666">Pending Invites</text>
+        <text x="0" y="25" font-family="Arial, sans-serif" font-size="24" fill="#ff9800" font-weight="bold">1</text>
+      </g>
+    </g>
+    
+    <!-- Team Members List -->
+    <g transform="translate(0, 220)">
+      <rect width="1100" height="680" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <!-- Table Header -->
+      <rect y="0" width="1100" height="50" fill="#f8f9fa" rx="8 8 0 0"/>
+      <text x="30" y="30" font-family="Arial, sans-serif" font-size="13" fill="#666" font-weight="bold">MEMBER</text>
+      <text x="400" y="30" font-family="Arial, sans-serif" font-size="13" fill="#666" font-weight="bold">EMAIL</text>
+      <text x="700" y="30" font-family="Arial, sans-serif" font-size="13" fill="#666" font-weight="bold">ROLE</text>
+      <text x="900" y="30" font-family="Arial, sans-serif" font-size="13" fill="#666" font-weight="bold">STATUS</text>
+      
+      <!-- Member 1 (Admin - You) -->
+      <g transform="translate(30, 80)">
+        <circle cx="20" cy="20" r="20" fill="#007bff"/>
+        <text x="20" y="27" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+        
+        <text x="60" y="18" font-family="Arial, sans-serif" font-size="15" fill="#333" font-weight="bold">John Smith</text>
+        <text x="60" y="35" font-family="Arial, sans-serif" font-size="12" fill="#999">(You)</text>
+        
+        <text x="370" y="27" font-family="Arial, sans-serif" font-size="14" fill="#666">john.smith@email.com</text>
+        
+        <rect x="670" y="8" width="80" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+        <text x="710" y="27" font-family="Arial, sans-serif" font-size="13" fill="#1565c0" text-anchor="middle" font-weight="bold">Admin</text>
+        
+        <rect x="870" y="8" width="70" height="28" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="14"/>
+        <text x="905" y="27" font-family="Arial, sans-serif" font-size="13" fill="#2e7d32" text-anchor="middle">Active</text>
+        
+        <text x="1000" y="27" font-family="Arial, sans-serif" font-size="14" fill="#999">—</text>
+      </g>
+      
+      <rect x="30" y="130" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Member 2 -->
+      <g transform="translate(30, 160)">
+        <circle cx="20" cy="20" r="20" fill="#9c27b0"/>
+        <text x="20" y="27" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">SJ</text>
+        
+        <text x="60" y="27" font-family="Arial, sans-serif" font-size="15" fill="#333" font-weight="bold">Sarah Johnson</text>
+        
+        <text x="370" y="27" font-family="Arial, sans-serif" font-size="14" fill="#666">sarah.j@acmecorp.com</text>
+        
+        <rect x="670" y="8" width="80" height="28" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="14"/>
+        <text x="710" y="27" font-family="Arial, sans-serif" font-size="13" fill="#7b1fa2" text-anchor="middle">Member</text>
+        
+        <rect x="870" y="8" width="70" height="28" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="14"/>
+        <text x="905" y="27" font-family="Arial, sans-serif" font-size="13" fill="#2e7d32" text-anchor="middle">Active</text>
+        
+        <!-- Action Menu -->
+        <g transform="translate(980, 0)">
+          <circle cx="20" cy="20" r="18" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+          <text x="20" y="27" font-family="Arial, sans-serif" font-size="18" fill="#666" text-anchor="middle">⋮</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="210" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Member 3 -->
+      <g transform="translate(30, 240)">
+        <circle cx="20" cy="20" r="20" fill="#ff9800"/>
+        <text x="20" y="27" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">MJ</text>
+        
+        <text x="60" y="27" font-family="Arial, sans-serif" font-size="15" fill="#333" font-weight="bold">Mike Johnson</text>
+        
+        <text x="370" y="27" font-family="Arial, sans-serif" font-size="14" fill="#666">mike.johnson@email.com</text>
+        
+        <rect x="670" y="8" width="80" height="28" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="14"/>
+        <text x="710" y="27" font-family="Arial, sans-serif" font-size="13" fill="#7b1fa2" text-anchor="middle">Member</text>
+        
+        <rect x="870" y="8" width="70" height="28" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="14"/>
+        <text x="905" y="27" font-family="Arial, sans-serif" font-size="13" fill="#2e7d32" text-anchor="middle">Active</text>
+        
+        <!-- Action Menu -->
+        <g transform="translate(980, 0)">
+          <circle cx="20" cy="20" r="18" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+          <text x="20" y="27" font-family="Arial, sans-serif" font-size="18" fill="#666" text-anchor="middle">⋮</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="290" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Pending Invite -->
+      <g transform="translate(30, 320)">
+        <circle cx="20" cy="20" r="20" fill="#e0e0e0"/>
+        <text x="20" y="27" font-family="Arial, sans-serif" font-size="16" fill="#999" text-anchor="middle" font-weight="bold">?</text>
+        
+        <text x="60" y="27" font-family="Arial, sans-serif" font-size="15" fill="#666">Pending Invitation</text>
+        
+        <text x="370" y="27" font-family="Arial, sans-serif" font-size="14" fill="#666">alex.chen@email.com</text>
+        
+        <rect x="670" y="8" width="80" height="28" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="14"/>
+        <text x="710" y="27" font-family="Arial, sans-serif" font-size="13" fill="#7b1fa2" text-anchor="middle">Member</text>
+        
+        <rect x="870" y="8" width="70" height="28" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="14"/>
+        <text x="905" y="27" font-family="Arial, sans-serif" font-size="13" fill="#e65100" text-anchor="middle">Pending</text>
+        
+        <!-- Action Buttons -->
+        <rect x="980" y="8" width="100" height="28" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+        <text x="1030" y="27" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Resend Invite</text>
+      </g>
+      
+      <rect x="30" y="370" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Empty State Message -->
+      <g transform="translate(0, 450)">
+        <text x="550" y="0" font-family="Arial, sans-serif" font-size="14" fill="#999" text-anchor="middle">Invite more team members to help manage jobs and company profile</text>
+      </g>
+      
+    </g>
+    
+  </g>
+  
+  <!-- Action Menu Dropdown (Shown on hover/click) -->
+  <g transform="translate(950, 350)">
+    <rect width="180" height="120" fill="#ffffff" stroke="#ccc" stroke-width="2" rx="6" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.1))"/>
+    
+    <g transform="translate(20, 30)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#333">Change Role</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" fill="#333">View Activity</text>
+      <text x="0" y="60" font-family="Arial, sans-serif" font-size="14" fill="#f44336">Remove Member</text>
+    </g>
+    
+    <text x="90" y="-15" font-family="Arial, sans-serif" font-size="11" fill="#999" text-anchor="middle">Action Menu</text>
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="1080" font-family="Arial, sans-serif" font-size="12" fill="#999">WIREFRAME - Team Management Page (Admin View)</text>
+</svg>

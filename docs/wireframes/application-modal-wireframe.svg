@@ -1,0 +1,70 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (dimmed) -->
+  <rect width="1200" height="750" fill="#000" opacity="0.5"/>
+  
+  <!-- Modal -->
+  <g transform="translate(200, 150)">
+    <rect width="800" height="520" fill="#ffffff" rx="12" stroke="#ccc" stroke-width="2"/>
+    
+    <!-- Close Button -->
+    <circle cx="760" cy="40" r="20" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+    <text x="760" y="48" font-family="Arial, sans-serif" font-size="20" fill="#666" text-anchor="middle" font-weight="bold">×</text>
+    
+    <!-- Header -->
+    <text x="400" y="60" font-family="Arial, sans-serif" font-size="24" fill="#333" text-anchor="middle" font-weight="bold">Apply for this Position</text>
+    <text x="400" y="85" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Senior Full Stack Developer at Acme Corp</text>
+    
+    <!-- Form Content -->
+    <g transform="translate(50, 120)">
+      
+      <!-- Auto-filled Info Box -->
+      <rect width="700" height="220" fill="#f0f8ff" stroke="#2196f3" stroke-width="1" rx="6"/>
+      
+      <text x="20" y="30" font-family="Arial, sans-serif" font-size="16" fill="#1565c0" font-weight="bold">Your Information (from profile)</text>
+      
+      <g transform="translate(20, 50)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Name:</text>
+        <text x="100" y="0" font-family="Arial, sans-serif" font-size="14" fill="#555">John Smith</text>
+        
+        <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Email:</text>
+        <text x="100" y="30" font-family="Arial, sans-serif" font-size="14" fill="#555">john.smith@email.com</text>
+        
+        <text x="0" y="60" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Title:</text>
+        <text x="100" y="60" font-family="Arial, sans-serif" font-size="14" fill="#555">Full Stack Developer</text>
+        
+        <text x="0" y="90" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Resume:</text>
+        <text x="100" y="90" font-family="Arial, sans-serif" font-size="14" fill="#555">✓ John_Smith_Resume.pdf</text>
+        
+        <text x="0" y="120" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Tech Stack:</text>
+        <g transform="translate(100, 105)">
+          <rect width="70" height="22" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="11"/>
+          <text x="35" y="15" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">React</text>
+          
+          <rect x="80" width="80" height="22" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="11"/>
+          <text x="120" y="15" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">Node.js</text>
+          
+          <rect x="170" width="100" height="22" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="11"/>
+          <text x="220" y="15" font-family="Arial, sans-serif" font-size="11" fill="#1565c0" text-anchor="middle">PostgreSQL</text>
+        </g>
+        
+        <text x="450" y="180" font-family="Arial, sans-serif" font-size="12" fill="#007bff" style="text-decoration: underline; cursor: pointer;">Edit Profile →</text>
+      </g>
+      
+      <!-- Buttons -->
+      <g transform="translate(0, 250)">
+        <rect width="700" height="1" fill="#e0e0e0"/>
+        
+        <rect y="30" x="450" width="120" height="50" fill="#fff" stroke="#ccc" stroke-width="2" rx="6"/>
+        <text x="510" y="60" font-family="Arial, sans-serif" font-size="15" fill="#666" text-anchor="middle" font-weight="bold">Cancel</text>
+        
+        <rect y="30" x="580" width="120" height="50" fill="#28a745" rx="6"/>
+        <text x="640" y="60" font-family="Arial, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold">Submit</text>
+      </g>
+      
+    </g>
+    
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="730" font-family="Arial, sans-serif" font-size="12" fill="#fff">WIREFRAME - Application Modal (Simple Apply Form)</text>
+</svg>

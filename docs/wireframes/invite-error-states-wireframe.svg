@@ -1,0 +1,143 @@
+<svg viewBox="0 0 1200 1400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="1400" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1200" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Sin City Tech Jobs</text>
+  
+  <!-- Error State 1: Expired Link -->
+  <g transform="translate(100, 120)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Error State 1: Expired Invite Link</text>
+    
+    <rect y="20" width="500" height="300" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+    
+    <!-- Error Icon -->
+    <circle cx="250" cy="100" r="40" fill="#ffebee" stroke="#f44336" stroke-width="2"/>
+    <text x="250" y="115" font-family="Arial, sans-serif" font-size="40" fill="#f44336" text-anchor="middle">⏰</text>
+    
+    <!-- Error Message -->
+    <text x="250" y="180" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Invitation Expired</text>
+    <text x="250" y="210" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">This invitation link has expired.</text>
+    <text x="250" y="230" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Please request a new invitation from your team.</text>
+    
+    <!-- Action Button -->
+    <rect x="150" y="260" width="200" height="40" fill="#007bff" rx="4"/>
+    <text x="250" y="285" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Contact Team Admin</text>
+  </g>
+  
+  <!-- Error State 2: Invalid/Used Token -->
+  <g transform="translate(650, 120)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Error State 2: Invalid/Used Token</text>
+    
+    <rect y="20" width="500" height="300" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+    
+    <!-- Error Icon -->
+    <circle cx="250" cy="100" r="40" fill="#ffebee" stroke="#f44336" stroke-width="2"/>
+    <text x="250" y="115" font-family="Arial, sans-serif" font-size="40" fill="#f44336" text-anchor="middle">✗</text>
+    
+    <!-- Error Message -->
+    <text x="250" y="180" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Invalid Invitation</text>
+    <text x="250" y="210" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">This invitation link is not valid or has</text>
+    <text x="250" y="230" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">already been used.</text>
+    
+    <!-- Action Button -->
+    <rect x="150" y="260" width="200" height="40" fill="#007bff" rx="4"/>
+    <text x="250" y="285" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Go to Login</text>
+  </g>
+  
+  <!-- Error State 3: Email Mismatch -->
+  <g transform="translate(100, 480)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Error State 3: Email Mismatch</text>
+    
+    <rect y="20" width="500" height="380" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+    
+    <!-- Warning Icon -->
+    <circle cx="250" cy="100" r="40" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+    <text x="250" y="115" font-family="Arial, sans-serif" font-size="40" fill="#ff9800" text-anchor="middle">⚠</text>
+    
+    <!-- Error Message -->
+    <text x="250" y="180" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Email Address Mismatch</text>
+    <text x="250" y="210" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">This invitation was sent to:</text>
+    
+    <!-- Invited Email -->
+    <rect x="100" y="225" width="300" height="35" fill="#f0f8ff" stroke="#2196f3" stroke-width="1" rx="4"/>
+    <text x="250" y="248" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">john.smith@company.com</text>
+    
+    <text x="250" y="285" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">But you signed in with:</text>
+    
+    <!-- Current Email -->
+    <rect x="100" y="300" width="300" height="35" fill="#ffebee" stroke="#f44336" stroke-width="1" rx="4"/>
+    <text x="250" y="323" font-family="Arial, sans-serif" font-size="14" fill="#f44336" text-anchor="middle" font-weight="bold">john.smith@personal.com</text>
+    
+    <!-- Action Buttons -->
+    <g transform="translate(75, 360)">
+      <rect width="160" height="40" fill="#fff" stroke="#ccc" stroke-width="2" rx="4"/>
+      <text x="80" y="25" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle" font-weight="bold">Use Different Account</text>
+      
+      <rect x="190" width="160" height="40" fill="#007bff" rx="4"/>
+      <text x="270" y="25" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Request New Invite</text>
+    </g>
+  </g>
+  
+  <!-- Error State 4: Already Member -->
+  <g transform="translate(650, 480)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Error State 4: Already a Member</text>
+    
+    <rect y="20" width="500" height="300" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+    
+    <!-- Success Icon -->
+    <circle cx="250" cy="100" r="40" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="250" y="115" font-family="Arial, sans-serif" font-size="40" fill="#4caf50" text-anchor="middle">✓</text>
+    
+    <!-- Message -->
+    <text x="250" y="180" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Already a Member!</text>
+    <text x="250" y="210" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">You're already part of Acme Corp.</text>
+    <text x="250" y="230" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Redirecting to your dashboard...</text>
+    
+    <!-- Action Button -->
+    <rect x="150" y="260" width="200" height="40" fill="#4caf50" rx="4"/>
+    <text x="250" y="285" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Go to Dashboard</text>
+  </g>
+  
+  <!-- Database Token Structure -->
+  <g transform="translate(100, 920)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" fill="#333" font-weight="bold">Database: Company Invite Token Structure</text>
+    
+    <rect y="20" width="1000" height="400" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+    
+    <g transform="translate(30, 50)">
+      <text x="0" y="0" font-family="Courier New, monospace" font-size="14" fill="#333" font-weight="bold">CompanyInvite Table:</text>
+      
+      <g transform="translate(0, 30)">
+        <text x="0" y="0" font-family="Courier New, monospace" font-size="13" fill="#666">{</text>
+        <text x="20" y="25" font-family="Courier New, monospace" font-size="13" fill="#666">  id: "uuid-123",</text>
+        <text x="20" y="50" font-family="Courier New, monospace" font-size="13" fill="#666">  company_id: "company-456",</text>
+        <text x="20" y="75" font-family="Courier New, monospace" font-size="13" fill="#007bff">  invited_email: "john.smith@company.com",  // Must match OAuth email</text>
+        <text x="20" y="100" font-family="Courier New, monospace" font-size="13" fill="#007bff">  token: "xyz123abc...",  // Unique, secure random string</text>
+        <text x="20" y="125" font-family="Courier New, monospace" font-size="13" fill="#007bff">  expires_at: "2025-01-28T10:00:00Z",  // 7 days from creation</text>
+        <text x="20" y="150" font-family="Courier New, monospace" font-size="13" fill="#666">  invited_by_user_id: "user-789",</text>
+        <text x="20" y="175" font-family="Courier New, monospace" font-size="13" fill="#007bff">  status: "pending" | "accepted" | "expired",</text>
+        <text x="20" y="200" font-family="Courier New, monospace" font-size="13" fill="#666">  created_at: "2025-01-21T10:00:00Z",</text>
+        <text x="20" y="225" font-family="Courier New, monospace" font-size="13" fill="#666">  accepted_at: null,  // Set when invite is accepted</text>
+        <text x="20" y="250" font-family="Courier New, monospace" font-size="13" fill="#666">  accepted_by_user_id: null  // Set when user joins</text>
+        <text x="0" y="275" font-family="Courier New, monospace" font-size="13" fill="#666">}</text>
+      </g>
+      
+      <g transform="translate(0, 320)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Validation Rules:</text>
+        <circle cx="0" cy="22" r="4" fill="#4caf50"/>
+        <text x="15" y="27" font-family="Arial, sans-serif" font-size="13" fill="#555">Token must be valid (not expired, not used)</text>
+        
+        <circle cx="0" cy="47" r="4" fill="#4caf50"/>
+        <text x="15" y="52" font-family="Arial, sans-serif" font-size="13" fill="#555">OAuth email must exactly match invited_email</text>
+        
+        <circle cx="0" cy="72" r="4" fill="#4caf50"/>
+        <text x="15" y="77" font-family="Arial, sans-serif" font-size="13" fill="#555">User cannot already be a member of the company</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="1380" font-family="Arial, sans-serif" font-size="12" fill="#999">WIREFRAME - Company Invite Error States &amp; Token Structure</text>
+</svg>

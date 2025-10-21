@@ -1,0 +1,87 @@
+graph TD
+    A[Company Dashboard] --> B{User Action}
+    
+    B -->|Click Post New Job| C[Job Creation Form]
+    B -->|View Job Postings| D[Job List View]
+    
+    C --> E[Job Information]
+    E --> F[Job Title - Required]
+    E --> G[Task Description - Required]
+    E --> H[Problem Description - Required]
+    E --> I[Gig Type - Required]
+    E --> J[Tech Stack/Skills - Optional]
+    E --> K[Experience Level - Optional]
+    E --> L[Compensation Range - Optional]
+    E --> M[Location/Remote - Optional]
+    
+    F --> N[Validation]
+    G --> N
+    H --> N
+    I --> N
+    
+    N --> O{Valid?}
+    O -->|No| P[Show Errors]
+    P --> C
+    
+    O -->|Yes| Q[Preview Job Post]
+    Q --> R{Confirm?}
+    R -->|Edit| C
+    R -->|Publish| S[Create Job Post]
+    
+    S --> T[Job Published]
+    T --> U[Redirect to Job List]
+    
+    D --> V[All Jobs List]
+    V --> W[Filter by Status]
+    W --> X[Active Jobs]
+    W --> Y[Inactive Jobs]
+    W --> Z[Filled Jobs]
+    
+    V --> AA{Select Job}
+    
+    AA -->|View Details| AB[Job Detail Page]
+    AA -->|Edit Job| AC[Edit Job Form]
+    AA -->|View Applicants| AD[Applicants List]
+    
+    AB --> AE[Job Actions]
+    AE -->|Edit| AC
+    AE -->|Deactivate| AF[Mark as Inactive]
+    AE -->|Mark as Filled| AG[Mark Job Filled Dialog]
+    AE -->|Delete| AH[Confirm Delete]
+    
+    AC --> AI[Update Job Fields]
+    AI --> AJ[Save Changes]
+    AJ --> AB
+    
+    AF --> AK{Confirm?}
+    AK -->|Yes| AL[Deactivate Job]
+    AK -->|No| AB
+    
+    AL --> AM[Job Hidden from Listings]
+    AM --> D
+    
+    AG --> AN[Filled Via Platform?]
+    AN -->|Yes| AO[Mark Filled via Platform]
+    AN -->|No| AP[Mark Filled Elsewhere]
+    
+    AO --> AQ[Update Metrics]
+    AP --> AQ
+    AQ --> AR[Job Marked as Filled]
+    AR --> D
+    
+    AH -->|Confirm| AS[Delete Job Post]
+    AS --> D
+    
+    AD --> AT[View Applicant Profiles]
+    AT --> AU[Applicant Actions]
+    AU --> AV[View Resume]
+    AU --> AW[Contact Applicant]
+    AU --> AX[Mark as Reviewed]
+    AU --> AY[Shortlist]
+    AU --> AZ[Reject]
+    
+    style C fill:#fff4e1
+    style S fill:#e8f5e9
+    style T fill:#e8f5e9
+    style D fill:#f3e5f5
+    style AD fill:#e1f5ff

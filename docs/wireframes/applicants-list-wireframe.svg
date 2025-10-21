@@ -1,0 +1,273 @@
+<svg viewBox="0 0 1400 1500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1500" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect width="1400" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Sin City Tech Jobs</text>
+  
+  <!-- View Toggle -->
+  <g transform="translate(800, 25)">
+    <rect width="200" height="35" fill="#f0f8ff" stroke="#2196f3" stroke-width="1" rx="18"/>
+    <rect x="2" y="2" width="98" height="31" fill="#007bff" rx="16"/>
+    <text x="51" y="23" font-family="Arial, sans-serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">Company</text>
+    <text x="151" y="23" font-family="Arial, sans-serif" font-size="13" fill="#2196f3" text-anchor="middle" font-weight="bold">Personal</text>
+  </g>
+  
+  <!-- User Menu -->
+  <g transform="translate(1250, 25)">
+    <circle cx="15" cy="15" r="15" fill="#007bff"/>
+    <text x="15" y="20" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+  </g>
+  
+  <!-- Sidebar -->
+  <g transform="translate(0, 80)">
+    <rect width="250" height="1420" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+    
+    <!-- Company Info -->
+    <g transform="translate(30, 30)">
+      <circle cx="35" cy="35" r="35" fill="#4caf50"/>
+      <text x="35" y="45" font-family="Arial, sans-serif" font-size="24" fill="#fff" text-anchor="middle" font-weight="bold">AC</text>
+      
+      <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">Acme Corp</text>
+      <text x="90" y="50" font-family="Arial, sans-serif" font-size="12" fill="#666">Admin</text>
+    </g>
+    
+    <!-- Navigation -->
+    <g transform="translate(0, 120)">
+      <text x="30" y="30" font-family="Arial, sans-serif" font-size="15" fill="#666">📊 Dashboard</text>
+      <text x="30" y="80" font-family="Arial, sans-serif" font-size="15" fill="#666">📝 Job Postings</text>
+      <text x="30" y="130" font-family="Arial, sans-serif" font-size="15" fill="#666">👥 Team Members</text>
+      
+      <!-- Active Item -->
+      <rect y="150" width="250" height="50" fill="#e3f2fd"/>
+      <rect y="150" width="4" height="50" fill="#007bff"/>
+      <text x="30" y="180" font-family="Arial, sans-serif" font-size="15" fill="#007bff" font-weight="bold">✉️ Applicants</text>
+      
+      <text x="30" y="230" font-family="Arial, sans-serif" font-size="15" fill="#666">⚙️ Company Profile</text>
+    </g>
+  </g>
+  
+  <!-- Main Content Area -->
+  <g transform="translate(270, 100)">
+    
+    <!-- Page Header -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333">All Applicants</text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="14" fill="#666">47 total applications across all jobs</text>
+    </g>
+    
+    <!-- Stats Bar -->
+    <g transform="translate(0, 90)">
+      <rect width="1100" height="70" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+      
+      <g transform="translate(30, 25)">
+        <rect width="110" height="30" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="15"/>
+        <text x="55" y="20" font-family="Arial, sans-serif" font-size="14" fill="#1565c0" text-anchor="middle" font-weight="bold">New (18)</text>
+      </g>
+      
+      <g transform="translate(160, 25)">
+        <rect width="150" height="30" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="15"/>
+        <text x="75" y="20" font-family="Arial, sans-serif" font-size="14" fill="#e65100" text-anchor="middle">Reviewed (12)</text>
+      </g>
+      
+      <g transform="translate(330, 25)">
+        <rect width="160" height="30" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="15"/>
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="14" fill="#7b1fa2" text-anchor="middle">Contacted (6)</text>
+      </g>
+      
+      <g transform="translate(510, 25)">
+        <rect width="160" height="30" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="15"/>
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="14" fill="#2e7d32" text-anchor="middle">Shortlisted (6)</text>
+      </g>
+      
+      <g transform="translate(690, 25)">
+        <rect width="140" height="30" fill="#ffebee" stroke="#f44336" stroke-width="1" rx="15"/>
+        <text x="70" y="20" font-family="Arial, sans-serif" font-size="14" fill="#c62828" text-anchor="middle">Rejected (5)</text>
+      </g>
+    </g>
+    
+    <!-- Search & Filter Bar -->
+    <g transform="translate(0, 190)">
+      <rect width="520" height="45" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+      <text x="20" y="28" font-family="Arial, sans-serif" font-size="14" fill="#999">🔍 Search by name, email, or tech stack...</text>
+      
+      <rect x="540" width="180" height="45" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+      <text x="560" y="28" font-family="Arial, sans-serif" font-size="14" fill="#666">Filter by Job ▼</text>
+      
+      <rect x="740" width="180" height="45" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+      <text x="760" y="28" font-family="Arial, sans-serif" font-size="14" fill="#666">Filter by Status ▼</text>
+      
+      <rect x="940" width="160" height="45" fill="#fff" stroke="#ccc" stroke-width="1" rx="4"/>
+      <text x="960" y="28" font-family="Arial, sans-serif" font-size="14" fill="#666">Sort: Newest ▼</text>
+    </g>
+    
+    <!-- Applicants List -->
+    <g transform="translate(0, 270)">
+      <rect width="1100" height="1130" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+      
+      <!-- Applicant 1 - New -->
+      <g transform="translate(30, 30)">
+        <circle cx="30" cy="35" r="30" fill="#2196f3"/>
+        <text x="30" y="45" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">SM</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="17" fill="#333" font-weight="bold">Sarah Martinez</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Title: Senior Full Stack Developer</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="13" fill="#007bff" font-weight="bold">Applied For: Senior Full Stack Developer</text>
+        <text x="80" y="76" font-family="Arial, sans-serif" font-size="12" fill="#999">📧 sarah.m@email.com • Applied 2 hours ago</text>
+        
+        <!-- Status Badge -->
+        <rect x="740" y="20" width="80" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+        <text x="780" y="39" font-family="Arial, sans-serif" font-size="13" fill="#1565c0" text-anchor="middle" font-weight="bold">New</text>
+        
+        <!-- Action Button -->
+        <rect x="840" y="20" width="200" height="40" fill="#007bff" rx="6"/>
+        <text x="940" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">View Application →</text>
+        
+        <!-- Tech Stack Tags -->
+        <g transform="translate(80, 88)">
+          <rect width="70" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="35" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">React</text>
+          
+          <rect x="80" width="80" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="120" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">Node.js</text>
+          
+          <rect x="170" width="100" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="220" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">PostgreSQL</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="150" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Applicant 2 - Different Job -->
+      <g transform="translate(30, 180)">
+        <circle cx="30" cy="35" r="30" fill="#2196f3"/>
+        <text x="30" y="45" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">SM</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="17" fill="#333" font-weight="bold">Sarah Martinez</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Title: Senior Full Stack Developer</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="13" fill="#007bff" font-weight="bold">Applied For: DevOps Engineer</text>
+        <text x="80" y="76" font-family="Arial, sans-serif" font-size="12" fill="#999">📧 sarah.m@email.com • Applied 5 days ago</text>
+        
+        <!-- Status Badge -->
+        <rect x="740" y="20" width="100" height="28" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="14"/>
+        <text x="790" y="39" font-family="Arial, sans-serif" font-size="13" fill="#e65100" text-anchor="middle">Reviewed</text>
+        
+        <!-- Action Button -->
+        <rect x="840" y="20" width="200" height="40" fill="#007bff" rx="6"/>
+        <text x="940" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">View Application →</text>
+        
+        <!-- Tech Stack Tags -->
+        <g transform="translate(80, 88)">
+          <rect width="60" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="30" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">AWS</text>
+          
+          <rect x="70" width="80" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="110" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">Docker</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="300" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Applicant 3 - Shortlisted -->
+      <g transform="translate(30, 330)">
+        <circle cx="30" cy="35" r="30" fill="#9c27b0"/>
+        <text x="30" y="45" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">DC</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="17" fill="#333" font-weight="bold">David Chen</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Title: Full Stack Engineer</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="13" fill="#007bff" font-weight="bold">Applied For: Product Manager</text>
+        <text x="80" y="76" font-family="Arial, sans-serif" font-size="12" fill="#999">📧 david.chen@email.com • Applied 1 day ago</text>
+        
+        <!-- Status Badge -->
+        <rect x="740" y="20" width="110" height="28" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="14"/>
+        <text x="795" y="39" font-family="Arial, sans-serif" font-size="13" fill="#2e7d32" text-anchor="middle" font-weight="bold">Shortlisted</text>
+        
+        <!-- Action Button -->
+        <rect x="840" y="20" width="200" height="40" fill="#007bff" rx="6"/>
+        <text x="940" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">View Application →</text>
+        
+        <!-- Tech Stack Tags -->
+        <g transform="translate(80, 88)">
+          <rect width="110" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="55" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">TypeScript</text>
+          
+          <rect x="120" width="70" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="155" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">Python</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="295" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Applicant 4 - Different person, different job -->
+      <g transform="translate(30, 510)">
+        <circle cx="30" cy="35" r="30" fill="#ff9800"/>
+        <text x="30" y="45" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">AJ</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="17" fill="#333" font-weight="bold">Alex Johnson</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Title: Backend Developer</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="13" fill="#007bff" font-weight="bold">Applied For: Senior Full Stack Developer</text>
+        <text x="80" y="76" font-family="Arial, sans-serif" font-size="12" fill="#999">📧 alex.j@email.com • Applied 3 days ago</text>
+        
+        <!-- Status Badge -->
+        <rect x="740" y="20" width="100" height="28" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="14"/>
+        <text x="790" y="39" font-family="Arial, sans-serif" font-size="13" fill="#e65100" text-anchor="middle">Reviewed</text>
+        
+        <!-- Action Button -->
+        <rect x="840" y="20" width="200" height="40" fill="#007bff" rx="6"/>
+        <text x="940" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">View Application →</text>
+        
+        <!-- Tech Stack Tags -->
+        <g transform="translate(80, 88)">
+          <rect width="80" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="40" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">Node.js</text>
+          
+          <rect x="90" width="100" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="140" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">PostgreSQL</text>
+        </g>
+      </g>
+      
+      <rect x="30" y="630" width="1040" height="1" fill="#e0e0e0"/>
+      
+      <!-- Applicant 5 -->
+      <g transform="translate(30, 660)">
+        <circle cx="30" cy="35" r="30" fill="#4caf50"/>
+        <text x="30" y="45" font-family="Arial, sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">MR</text>
+        
+        <text x="80" y="20" font-family="Arial, sans-serif" font-size="17" fill="#333" font-weight="bold">Maria Rodriguez</text>
+        <text x="80" y="40" font-family="Arial, sans-serif" font-size="13" fill="#666">Title: Full Stack Developer</text>
+        <text x="80" y="58" font-family="Arial, sans-serif" font-size="13" fill="#007bff" font-weight="bold">Applied For: UX/UI Designer for Mobile App</text>
+        <text x="80" y="76" font-family="Arial, sans-serif" font-size="12" fill="#999">📧 maria.r@email.com • Applied 4 days ago</text>
+        
+        <!-- Status Badge -->
+        <rect x="740" y="20" width="80" height="28" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="14"/>
+        <text x="780" y="39" font-family="Arial, sans-serif" font-size="13" fill="#1565c0" text-anchor="middle" font-weight="bold">New</text>
+        
+        <!-- Action Button -->
+        <rect x="840" y="20" width="200" height="40" fill="#007bff" rx="6"/>
+        <text x="940" y="45" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">View Application →</text>
+        
+        <!-- Tech Stack Tags -->
+        <g transform="translate(80, 88)">
+          <rect width="70" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="35" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">Figma</text>
+          
+          <rect x="80" width="60" height="24" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="12"/>
+          <text x="110" y="16" font-family="Arial, sans-serif" font-size="11" fill="#2e7d32" text-anchor="middle">Vue</text>
+        </g>
+      </g>
+      
+    </g>
+    
+  </g>
+  
+  <!-- Info Note -->
+  <g transform="translate(270, 1420)">
+    <rect width="1100" height="60" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="6"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="13" fill="#1565c0" font-weight="bold">ℹ️  Showing all applications across all jobs</text>
+    <text x="20" y="45" font-family="Arial, sans-serif" font-size="12" fill="#1565c0">Same person may appear multiple times if they applied to different roles. Each application is tracked separately.</text>
+  </g>
+  
+  <!-- Annotation -->
+  <text x="60" y="1480" font-family="Arial, sans-serif" font-size="12" fill="#999">WIREFRAME - All Applicants List (Shows all applications with "Applied For" column)</text>
+</svg>
