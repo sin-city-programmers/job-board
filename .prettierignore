@@ -1,14 +1,25 @@
-node_modules
-.next
-.git
-.env
-.env.local
-.env.production.local
-.env.development.local
-dist
-build
-coverage
-.nyc_output
+# Add files here to ignore them from prettier formatting
+/dist
+/coverage
+/.nx/cache
+/.nx/workspace-data
+
+# Build outputs
+/build
+/.next
+/out
+
+# Dependencies
+/node_modules
+
+# Generated files
+*.generated.*
+*.d.ts
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
 *.log
-.DS_Store
-*.tsbuildinfo

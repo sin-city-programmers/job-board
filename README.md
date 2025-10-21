@@ -1,198 +1,81 @@
-# Sin City Programmers Job Board
+# NxWorkspace
 
-A modern job board platform built for the Sin City Programmers community, featuring a full-stack Next.js application with authentication, database integration, and a beautiful UI.
+<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
-## About
+✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
 
-This project serves as the central job board for the Sin City Programmers community, connecting professionals with opportunities in the Las Vegas area. Built with modern web technologies and designed for scalability and maintainability.
+[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/node?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
 
-## Tech Stack
+## Finish your CI setup
 
-### Frontend
+[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/f6LACPkg5C)
 
-- **[Next.js 15](https://nextjs.org/docs)** - React framework with App Router for optimal performance
-- **[React 19](https://react.dev/)** - Latest React with concurrent features
-- **[TypeScript 5](https://www.typescriptlang.org/docs/)** - Type-safe development
-- **[TanStack Query](https://tanstack.com/query/latest)** - Powerful data fetching and server state management
-- **[Tailwind CSS 4](https://tailwindcss.com/docs)** - Utility-first CSS framework with CSS-based configuration
-- **[shadcn/ui](https://ui.shadcn.com/)** - Accessible, customizable UI components
+## Run tasks
 
-### Backend
+To run the dev server for your app, use:
 
-- **[Next.js API Routes](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)** - Serverless API endpoints
-- **[Better-Auth](https://www.better-auth.com/)** - Modern authentication with TypeScript support
-
-### Database
-
-- **[Prisma](https://www.prisma.io/docs)** - Type-safe database ORM
-- **[MySQL](https://dev.mysql.com/doc/)** - Relational database
-
-### Build & Development
-
-- **[Turborepo](https://turbo.build/repo/docs)** - High-performance build system
-- **[ESLint](https://eslint.org/docs/)** - Code linting
-- **[Prettier](https://prettier.io/docs/)** - Code formatting with Tailwind plugin
-- **[Husky](https://typicode.github.io/husky/)** - Git hooks
-
-## Quick Start
-
-### Prerequisites
-
-- **Node.js 22 LTS** - Latest LTS version with modern JavaScript features and improved performance
-- **npm 10+** - Package manager
-- **MySQL** - Database (hosted or local)
-- **Git** - Version control
-
-### Development Setup
-
-#### 1. Fork and Clone
-
-```bash
-git clone https://github.com/sin-city-programmers/job-board.git sin-city-programmers-job-board # HTTPS
-# OR
-git clone git@github.com:sin-city-programmers/job-board.git sin-city-programmers-job-board # SSH
-# OR
-gh repo clone sin-city-programmers/job-board sin-city-programmers-job-board #GH CLI
-
-cd sin-city-programmers-job-board
+```sh
+npx nx serve api
 ```
 
-#### 2. Install Dependencies
+To create a production bundle:
 
-```bash
-npm install
+```sh
+npx nx build api
 ```
 
-#### 3. Environment Setup
+To see all available targets to run for a project, run:
 
-```bash
-cp .env.example .env
-# Edit `.env with your configuration
+```sh
+npx nx show project api
 ```
 
-#### 4. **Generate Prisma Client** (when database is ready)
+These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
 
-```bash
-npm run db:generate
+[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+## Add new projects
+
+While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+
+Use the plugin's generator to create new projects.
+
+To generate a new application, use:
+
+```sh
+npx nx g @nx/node:app demo
 ```
 
-#### 5. Verify Installation
+To generate a new library, use:
 
-```bash
-npm run dev
+```sh
+npx nx g @nx/node:lib mylib
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the application.
+You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
 
-## Environment Variables
+[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-| Variable                      | Description                      | Required | Example                                         | Notes                           |
-| ----------------------------- | -------------------------------- | -------- | ----------------------------------------------- | ------------------------------- |
-| `DATABASE_URL`                | MySQL database connection string | Yes      | `mysql://user:password@localhost:3306/database` | Used by Prisma                  |
-| `BETTER_AUTH_SECRET`          | Secret key for authentication    | Yes      | `your-secret-key-here`                          | Generate a secure random string |
-| `BETTER_AUTH_URL`             | Base URL for authentication      | Yes      | `http://localhost:3000`                         | Development URL                 |
-| `NEXT_PUBLIC_BETTER_AUTH_URL` | Public URL for auth client       | Yes      | `http://localhost:3000`                         | Must match BETTER_AUTH_URL      |
-| `NEXTAUTH_URL`                | NextAuth compatibility           | No       | `http://localhost:3000`                         | Legacy compatibility            |
-| `NEXTAUTH_SECRET`             | NextAuth secret                  | No       | `your-nextauth-secret`                          | Legacy compatibility            |
+[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-OAuth provider variables are commented out in `.env.example` and can be configured as needed.
+## Install Nx Console
 
-## Project Architecture
+Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
 
-The project follows Next.js App Router conventions with a clear separation of concerns:
+[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-- **`src/app/`** - Next.js App Router directory containing all routes, layouts, and API endpoints
-  - App Router uses file-system based routing where folders define routes
-  - Special files: `layout.tsx` (shared UI), `page.tsx` (route UI), `route.ts` (API handlers)
-  - Better-Auth API routes mounted at `/api/auth/*` for authentication
+## Useful links
 
-- **`src/components/`** - React components organized by purpose
-  - `ui/` - shadcn/ui components (customizable, owned by project)
-  - Shared components like theme provider and utility components
+Learn more:
 
-- **`src/lib/`** - Utility functions, configurations, and shared logic
-  - Authentication instances (server and client)
-  - Helper functions and utilities
+- [Learn more about this workspace setup](https://nx.dev/nx-api/node?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-- **`prisma/`** - Database schema and migrations
-  - `schema.prisma` defines data models
-  - Migrations track database changes over time
+And join the Nx community:
 
-- **Configuration files** at root level control build, linting, and formatting behavior
-
-## Available Scripts
-
-| Command                | Description               | When to Use           |
-| ---------------------- | ------------------------- | --------------------- |
-| `npm run dev`          | Start development server  | Local development     |
-| `npm run build`        | Build for production      | Before deployment     |
-| `npm run start`        | Start production server   | Production deployment |
-| `npm run lint`         | Run ESLint                | Code quality checks   |
-| `npm run format`       | Format code with Prettier | Code formatting       |
-| `npm run format:check` | Check code formatting     | Pre-commit validation |
-| `npm run db:generate`  | Generate Prisma Client    | After schema changes  |
-| `npm run db:push`      | Push schema to database   | Development only      |
-| `npm run db:migrate`   | Create database migration | Schema changes        |
-| `npm run db:studio`    | Open Prisma Studio        | Database management   |
-
-## Key Architectural Decisions
-
-### Why Next.js 15?
-
-Next.js provides a complete React framework with built-in optimizations, server-side rendering, and API routes. The App Router offers improved performance and developer experience over the Pages Router.
-
-### Why Tailwind CSS 4?
-
-Tailwind CSS 4 uses CSS-based configuration instead of JavaScript config files, resulting in faster builds and better integration with modern tooling. The `@import "tailwindcss"` pattern simplifies setup.
-
-### Why Better-Auth?
-
-Better-Auth offers superior TypeScript support, more flexible configuration, and modern architecture compared to NextAuth. It provides better OAuth integration and type safety.
-
-### Why TanStack Query?
-
-TanStack Query provides powerful data synchronization for server state with automatic caching, background updates, and optimistic mutations. It integrates seamlessly with Next.js App Router, offers excellent TypeScript support, and includes built-in devtools for debugging. Perfect for managing complex data fetching patterns in modern React applications.
-
-### Why Turborepo?
-
-Turborepo optimizes build performance through intelligent caching and parallel execution. It's designed for monorepos but provides significant benefits even in single-package projects.
-
-### Why shadcn/ui?
-
-shadcn/ui provides full code ownership with copy-paste components. Unlike traditional component libraries, you own and can customize every component without package lock-in.
-
-### Why Prisma?
-
-Prisma offers type-safe database access with excellent TypeScript integration. It provides a clean API for database operations and handles migrations automatically.
-
-## Development Workflow
-
-- **Feature branches** - All development happens in feature branches
-- **Pre-commit hooks** - Automatic linting and formatting via Husky
-- **Hot reload** - Next.js provides instant feedback during development
-- **Dark mode** - Built-in theme switching with system preference detection
-
-## Deployment
-
-**Application**: Deployed on Vercel for optimal Next.js performance and global CDN distribution.
-
-**Database**: Self-hosted MySQL database on dedicated infrastructure for full control and data sovereignty.
-
-Deployment instructions will be added as the infrastructure is finalized.
-
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on:
-
-- Development setup
-- Coding standards
-- Git workflow
-- Pull request process
-
-## License & Team
-
-This project is developed by and for the Sin City Programmers community.
-
----
-
-Built with modern web technologies and designed for the Las Vegas community.
+- [Discord](https://go.nx.dev/community)
+- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
+- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
+- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
