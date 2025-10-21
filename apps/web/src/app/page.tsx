@@ -1,29 +1,20 @@
-import styles from './page.module.css';
-
 export default function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
   return (
-    <div className={styles.page}>
-      <div className="wrapper">
-        <div className="container">
-          <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
+    <div>
+      <div className="w-full">
+        <div className="mx-auto max-w-3xl pb-12 px-4 text-gray-700 w-full">
+          <div className="mt-10">
+            <h1 className="text-5xl font-medium tracking-tight leading-none">
+              <span className="block text-3xl font-light leading-9 mb-2"> Hello there, </span>
               Welcome web 👋
             </h1>
           </div>
 
-          <div
-            id="hero"
-            className="rounded"
-          >
-            <div className="text-container">
-              <h2>
+          <div className="items-center bg-blue-900 border-0 box-border text-gray-700 grid grid-cols-1 mt-14 rounded-3xl md:grid-cols-2">
+            <div className="text-white p-12 px-8">
+              <h2 className="text-2xl leading-8 relative">
                 <svg
+                  className="text-teal-400 h-8 -left-1 absolute top-0 w-8"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -36,12 +27,18 @@ export default function Index() {
                     d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
                   />
                 </svg>
-                <span>You&apos;re up and running</span>
+                <span className="ml-10">You&apos;re up and running</span>
               </h2>
-              <a href="#commands"> What&apos;s next? </a>
+              <a
+                href="#commands"
+                className="bg-white rounded-xl text-gray-700 inline-block mt-6 px-8 py-4 no-underline"
+              >
+                What&apos;s next?
+              </a>
             </div>
-            <div className="logo-container">
+            <div className="hidden justify-center px-8 md:flex">
               <svg
+                className="text-white w-2/3"
                 fill="currentColor"
                 role="img"
                 viewBox="0 0 24 24"
@@ -52,19 +49,20 @@ export default function Index() {
             </div>
           </div>
 
-          <div id="middle-content">
-            <div
-              id="learning-materials"
-              className="rounded shadow"
-            >
-              <h2>Learning materials</h2>
+          <div className="items-start grid gap-16 grid-cols-1 mt-14 md:grid-cols-2">
+            <div className="p-10 px-8 rounded-3xl shadow-lg">
+              <h2 className="font-medium text-xl tracking-tight leading-7 px-4">
+                Learning materials
+              </h2>
+
               <a
                 href="https://nx.dev/getting-started/intro?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
-                className="list-item-link"
+                className="items-center rounded-xl flex mt-4 p-4 w-full transition-all duration-150 ease-out  hover:bg-teal-200"
               >
                 <svg
+                  className="mr-4 h-6 w-6 transition-all duration-150 ease-out"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -77,11 +75,15 @@ export default function Index() {
                     d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                   />
                 </svg>
-                <span>
+                <span className="grow font-normal transition-all duration-150 ease-out">
                   Documentation
-                  <span> Everything is in there </span>
+                  <span className="block text-xs font-light leading-4 text-gray-500 transition-all duration-150 ease-out">
+                    {' '}
+                    Everything is in there{' '}
+                  </span>
                 </span>
                 <svg
+                  className="h-4 w-4 transition-all duration-150 ease-out hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -95,13 +97,15 @@ export default function Index() {
                   />
                 </svg>
               </a>
+
               <a
                 href="https://nx.dev/blog/?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
-                className="list-item-link"
+                className="items-center rounded-xl flex mt-4 p-4 w-full transition-all duration-150 ease-out  hover:bg-teal-200"
               >
                 <svg
+                  className="mr-4 h-6 w-6 transition-all duration-150 ease-out"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -114,11 +118,15 @@ export default function Index() {
                     d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
                   />
                 </svg>
-                <span>
+                <span className="grow font-normal transition-all duration-150 ease-out">
                   Blog
-                  <span> Changelog, features & events </span>
+                  <span className="block text-xs font-light leading-4 text-gray-500 transition-all duration-150 ease-out">
+                    {' '}
+                    Changelog, features & events{' '}
+                  </span>
                 </span>
                 <svg
+                  className="h-4 w-4 transition-all duration-150 ease-out hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -132,13 +140,15 @@ export default function Index() {
                   />
                 </svg>
               </a>
+
               <a
                 href="https://www.youtube.com/@NxDevtools/videos?utm_source=nx-project&sub_confirmation=1"
                 target="_blank"
                 rel="noreferrer"
-                className="list-item-link"
+                className="items-center rounded-xl flex mt-4 p-4 w-full transition-all duration-150 ease-out hover:bg-teal-200"
               >
                 <svg
+                  className="mr-4 h-6 w-6 transition-all duration-150 ease-out"
                   role="img"
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -147,11 +157,15 @@ export default function Index() {
                   <title>YouTube</title>
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
-                <span>
+                <span className="grow font-normal transition-all duration-150 ease-out">
                   YouTube channel
-                  <span> Nx Show, talks & tutorials </span>
+                  <span className="block text-xs font-light leading-4 text-gray-500 transition-all duration-150 ease-out">
+                    {' '}
+                    Nx Show, talks & tutorials{' '}
+                  </span>
                 </span>
                 <svg
+                  className="h-4 w-4 transition-all duration-150 ease-out hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -165,13 +179,15 @@ export default function Index() {
                   />
                 </svg>
               </a>
+
               <a
                 href="https://nx.dev/react-tutorial/1-code-generation?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
-                className="list-item-link"
+                className="items-center rounded-xl flex mt-4 p-4 w-full transition-all duration-150 ease-out  hover:bg-teal-200"
               >
                 <svg
+                  className="mr-4 h-6 w-6 transition-all duration-150 ease-out"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -184,11 +200,15 @@ export default function Index() {
                     d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
                   />
                 </svg>
-                <span>
+                <span className="grow font-normal transition-all duration-150 ease-out">
                   Interactive tutorials
-                  <span> Create an app, step-by-step </span>
+                  <span className="block text-xs font-light leading-4 text-gray-500 transition-all duration-150 ease-out">
+                    {' '}
+                    Create an app, step-by-step{' '}
+                  </span>
                 </span>
                 <svg
+                  className="h-4 w-4 transition-all duration-150 ease-out hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -202,13 +222,15 @@ export default function Index() {
                   />
                 </svg>
               </a>
+
               <a
                 href="https://nxplaybook.com/?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
-                className="list-item-link"
+                className="items-center rounded-xl flex mt-4 p-4 w-full transition-all duration-150 ease-out  hover:bg-teal-200"
               >
                 <svg
+                  className="mr-4 h-6 w-6 transition-all duration-150 ease-out"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -223,11 +245,15 @@ export default function Index() {
                     d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                   />
                 </svg>
-                <span>
+                <span className="grow font-normal transition-all duration-150 ease-out">
                   Video courses
-                  <span> Nx custom courses </span>
+                  <span className="block text-gray-500 text-xs font-light leading-4 transition-all duration-150 ease-out">
+                    {' '}
+                    Nx custom courses{' '}
+                  </span>
                 </span>
                 <svg
+                  className="h-4 w-4 transition-all duration-150 ease-out hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -242,15 +268,16 @@ export default function Index() {
                 </svg>
               </a>
             </div>
-            <div id="other-links">
+
+            <div>
               <a
-                id="nx-console"
-                className="button-pill rounded shadow"
+                className="p-6 px-8 transition-all duration-300 ease-out items-center flex rounded-3xl shadow-lg  hover:bg-blue-200"
                 href="https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console&utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
               >
                 <svg
+                  className="transition-all duration-150 ease-out shrink-0 w-12 text-blue-600"
                   fill="currentColor"
                   role="img"
                   viewBox="0 0 24 24"
@@ -259,19 +286,22 @@ export default function Index() {
                   <title>Visual Studio Code</title>
                   <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z" />
                 </svg>
-                <span>
+                <span className="tracking-tight font-normal text-lg leading-7 px-4">
                   Install Nx Console for VSCode
-                  <span>The official VSCode extension for Nx.</span>
+                  <span className="block text-sm font-light leading-5">
+                    The official VSCode extension for Nx.
+                  </span>
                 </span>
               </a>
+
               <a
-                id="nx-console-jetbrains"
-                className="button-pill rounded shadow"
+                className="p-6 px-8 transition-all duration-300 ease-out items-center flex rounded-3xl shadow-lg mt-8  hover:bg-pink-200"
                 href="https://plugins.jetbrains.com/plugin/21060-nx-console"
                 target="_blank"
                 rel="noreferrer"
               >
                 <svg
+                  className="transition-all duration-150 ease-out shrink-0 w-12 text-pink-500"
                   height="48"
                   width="48"
                   viewBox="20 20 60 60"
@@ -291,18 +321,18 @@ export default function Index() {
                     <path d="m68.86 51 1.45-1.73a4.84 4.84 0 0 0 3 1.13c.71 0 1.08-.24 1.08-.65 0-.4-.31-.6-1.59-.91-2-.46-3.53-1-3.53-2.93 0-1.74 1.37-3 3.62-3a5.89 5.89 0 0 1 3.86 1.25l-1.26 1.84a4.63 4.63 0 0 0 -2.62-.92c-.63 0-.94.25-.94.6 0 .42.32.61 1.63.91 2.14.46 3.44 1.16 3.44 2.91 0 1.91-1.51 3-3.79 3a6.58 6.58 0 0 1 -4.35-1.5z" />
                   </g>
                 </svg>
-                <span>
+                <span className="tracking-tight font-normal text-lg leading-7 px-4">
                   Install Nx Console for JetBrains
-                  <span>Available for WebStorm, Intellij IDEA Ultimate and more!</span>
+                  <span className="block text-sm font-light leading-5">
+                    Available for WebStorm, Intellij IDEA Ultimate and more!
+                  </span>
                 </span>
               </a>
-              <div
-                id="nx-cloud"
-                className="rounded shadow"
-              >
-                <div>
+
+              <div className="mb-8 mt-8 p-10 px-8 rounded-3xl shadow-lg">
+                <div className="items-center flex">
                   <svg
-                    id="nx-cloud-logo"
+                    className="rounded-md shrink-0 w-12"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor"
@@ -318,30 +348,38 @@ export default function Index() {
                       d="M23 6v14.1667C23 21.7307 21.7307 23 20.1667 23H6c0-3.128 2.53867-5.6667 5.6667-5.6667 3.128 0 5.6666-2.5386 5.6666-5.6666C17.3333 8.53867 19.872 6 23 6Z"
                     />
                   </svg>
-                  <h2>
+                  <h2 className="text-lg font-normal tracking-tight leading-7 px-4">
                     Nx Cloud
-                    <span>Enable faster CI & better DX</span>
+                    <span className="block text-sm font-light leading-5">
+                      Enable faster CI & better DX
+                    </span>
                   </h2>
                 </div>
-                <p>You can activate distributed tasks executions and caching by running:</p>
-                <pre>nx connect</pre>
+                <p className="text-base leading-6 mt-4">
+                  You can activate distributed tasks executions and caching by running:
+                </p>
+                <pre className="mt-4 bg-neutral-700 py-2 px-3 font-mono rounded-sm overflow-scroll text-neutral-100 text-sm">
+                  nx connect
+                </pre>
                 <a
                   href="https://nx.app/?utm_source=nx-project"
                   target="_blank"
                   rel="noreferrer"
+                  className="text-gray-500 block text-sm leading-5 mt-6 text-right hover:underline"
                 >
                   {' '}
                   What is Nx Cloud?{' '}
                 </a>
               </div>
+
               <a
-                id="nx-repo"
-                className="button-pill rounded shadow"
+                className="p-6 px-8 transition-all duration-300 ease-out items-center flex rounded-3xl shadow-lg  hover:bg-neutral-200"
                 href="https://github.com/nrwl/nx?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
               >
                 <svg
+                  className="transition-all duration-150 ease-out shrink-0 w-12 text-gray-900"
                   fill="currentColor"
                   role="img"
                   viewBox="0 0 24 24"
@@ -349,23 +387,26 @@ export default function Index() {
                 >
                   <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
                 </svg>
-                <span>
+                <span className="tracking-tight font-normal text-lg leading-7 px-4">
                   Nx is open source
-                  <span> Love Nx? Give us a star! </span>
+                  <span className="block text-sm font-light leading-5">
+                    {' '}
+                    Love Nx? Give us a star!{' '}
+                  </span>
                 </span>
               </a>
             </div>
           </div>
 
-          <div
-            id="commands"
-            className="rounded shadow"
-          >
-            <h2>Next steps</h2>
-            <p>Here are some things you can do with Nx:</p>
-            <details>
-              <summary>
+          <div className="p-10 px-8 mt-14 rounded-3xl shadow-lg">
+            <h2 className="text-xl font-normal tracking-tight leading-7 px-4">Next steps</h2>
+            <p className="text-base font-light leading-6 mt-4 px-4">
+              Here are some things you can do with Nx:
+            </p>
+            <details className="items-start flex mt-4 px-4 w-full justify-between">
+              <summary className="rounded-lg flex font-normal p-2 cursor-pointer transition-all duration-150 ease-out hover:bg-gray-100">
                 <svg
+                  className="h-6 mr-4 w-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -380,16 +421,17 @@ export default function Index() {
                 </svg>
                 Add UI library
               </summary>
-              <pre>
-                <span># Generate UI lib</span>
+              <pre className="bg-neutral-700 py-2 px-3 font-mono rounded-sm overflow-scroll text-neutral-100 text-sm">
+                <span className="text-gray-300 block"># Generate UI lib</span>
                 nx g @nx/next:library ui
-                <span># Add a component</span>
+                <span className="text-gray-300 block"># Add a component</span>
                 nx g @nx/next:component ui/src/lib/button
               </pre>
             </details>
-            <details>
-              <summary>
+            <details className="items-start flex mt-4 px-4 w-full justify-between">
+              <summary className="rounded-lg flex font-normal p-2 cursor-pointer transition-all duration-150 ease-out hover:bg-gray-100">
                 <svg
+                  className="h-6 mr-4 w-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -404,11 +446,14 @@ export default function Index() {
                 </svg>
                 View project details
               </summary>
-              <pre>nx show project web --web</pre>
+              <pre className="bg-neutral-700 py-2 px-3 font-mono rounded-sm overflow-scroll text-neutral-100 text-sm">
+                nx show project web --web
+              </pre>
             </details>
-            <details>
-              <summary>
+            <details className="items-start flex mt-4 px-4 w-full justify-between">
+              <summary className="rounded-lg flex font-normal p-2 cursor-pointer transition-all duration-150 ease-out hover:bg-gray-100">
                 <svg
+                  className="h-6 mr-4 w-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -423,11 +468,14 @@ export default function Index() {
                 </svg>
                 View interactive project graph
               </summary>
-              <pre>nx graph</pre>
+              <pre className="bg-neutral-700 py-2 px-3 font-mono rounded-sm overflow-scroll text-neutral-100 text-sm">
+                nx graph
+              </pre>
             </details>
-            <details>
-              <summary>
+            <details className="items-start flex mt-4 px-4 w-full justify-between">
+              <summary className="rounded-lg flex font-normal p-2 cursor-pointer transition-all duration-150 ease-out hover:bg-gray-100">
                 <svg
+                  className="h-6 mr-4 w-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -442,20 +490,23 @@ export default function Index() {
                 </svg>
                 Run affected commands
               </summary>
-              <pre>
-                <span># see what&apos;s been affected by changes</span>
+              <pre className="bg-neutral-700 py-2 px-3 font-mono rounded-sm overflow-scroll text-neutral-100 text-sm">
+                <span className="text-gray-300 block">
+                  # see what&apos;s been affected by changes
+                </span>
                 nx affected:graph
-                <span># run tests for current changes</span>
+                <span className="text-gray-300 block"># run tests for current changes</span>
                 nx affected:test
-                <span># run e2e tests for current changes</span>
+                <span className="text-gray-300 block"># run e2e tests for current changes</span>
                 nx affected:e2e
               </pre>
             </details>
           </div>
 
-          <p id="love">
+          <p className="text-gray-500 text-sm leading-5 mt-14 opacity-60 text-center">
             Carefully crafted with
             <svg
+              className="text-red-300 w-5 h-5 inline -mt-1"
               fill="currentColor"
               stroke="none"
               viewBox="0 0 24 24"
