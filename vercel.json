@@ -1,5 +1,6 @@
 {
   "buildCommand": "nx build web",
+  "installCommand": "npm ci",
   "outputDirectory": "apps/web/.next",
   "framework": "nextjs"
 }
