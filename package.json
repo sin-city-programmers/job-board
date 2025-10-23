@@ -2,9 +2,7 @@
   "name": "@nx-workspace/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "prepare": "husky"
-  },
+  "scripts": {},
   "private": true,
   "dependencies": {
     "@nestjs/common": "^11.0.0",
