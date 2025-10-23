@@ -1,6 +1,5 @@
 //@ts-check
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
 
 /**
@@ -10,6 +9,10 @@ const nextConfig = {
   // Use this to set Nx-specific options
   // See: https://nx.dev/recipes/next/next-config-setup
   nx: {},
+  // Use webpack instead of turbopack for better Nx compatibility
+  webpack: (config, { isServer }) => {
+    return config;
+  },
 };
 
 const plugins = [

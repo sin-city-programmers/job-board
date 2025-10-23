@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "next dev --port 4200 --webpack",
+        "cwd": "apps/web"
+      }
+    }
+  }
+}
