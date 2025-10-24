@@ -1,21 +1,14 @@
 import nx from '@nx/eslint-plugin';
-import nextPlugin from '@next/eslint-plugin-next';
+import nextVitals from 'eslint-config-next/core-web-vitals';
 import baseConfig from '../../eslint.config.mjs';
 
-export default [
+const config = [
   ...baseConfig,
   ...nx.configs['flat/react-typescript'],
-  {
-    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
-    plugins: {
-      '@next/next': nextPlugin,
-    },
-    rules: {
-      ...nextPlugin.configs.recommended.rules,
-      ...nextPlugin.configs['core-web-vitals'].rules,
-    },
-  },
+  ...nextVitals,
   {
     ignores: ['.next/**/*', '**/out-tsc'],
   },
 ];
+
+export default config;
