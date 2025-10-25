@@ -8,6 +8,13 @@ export default [
     ignores: ['**/dist', '**/test-output'],
   },
   {
+    settings: {
+      next: {
+        rootDir: ['apps/*/'],
+      },
+    },
+  },
+  {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {
       '@nx/enforce-module-boundaries': [
