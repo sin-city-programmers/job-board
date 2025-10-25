@@ -6,7 +6,7 @@ export default function Index() {
           <div className="mt-10">
             <h1 className="text-5xl leading-none font-medium tracking-tight">
               <span className="mb-2 block text-3xl leading-9 font-light"> Hello there, </span>
-              Welcome web 👋
+              Welcome to the Sin City Tech Job Board 👋
             </h1>
           </div>
 
