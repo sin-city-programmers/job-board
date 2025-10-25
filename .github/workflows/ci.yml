@@ -33,9 +33,14 @@ jobs:
 
       - run: npm ci --legacy-peer-deps
 
-      # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
-      # - run: npx nx-cloud record -- echo Hello World
-      - run: npx nx run-many -t lint test build typecheck
-      # Nx Cloud recommends fixes for failures to help you get CI green faster. Learn more: https://nx.dev/ci/features/self-healing-ci
-      - run: npx nx fix-ci
-        if: always()
+      # Run lint for all projects
+      - run: npx nx run-many --no-cloud --target=lint
+
+      # Run tests for all projects
+      - run: npx nx run-many --no-cloud --target=test
+
+      # Run builds for all projects
+      - run: npx nx run-many --no-cloud --target=build
+
+      # Run type checking for all projects
+      - run: npx nx run-many --no-cloud --target=typecheck
