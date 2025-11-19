@@ -48,3 +48,15 @@ test-output
 # Next.js
 .next
 out
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+docker/.env
+docker/.env.local
+
+# Docker
+docker/docker-compose.override.yml
+docker/mysql_data/
+*.sql.backup

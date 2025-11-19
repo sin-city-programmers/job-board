@@ -13,6 +13,96 @@ npm install
 npx husky
 ```
 
+## Database Setup
+
+This project uses MySQL 8.0 running in a Docker container for local development.
+
+### Prerequisites
+
+- Docker and Docker Compose installed on your machine
+- Port 3306 available (or configure a different port in `.env`)
+
+### Quick Start
+
+1. Copy the environment template file:
+```bash
+cp docker/.env.example docker/.env
+```
+
+2. (Optional) Update the `docker/.env` file with your preferred credentials
+
+3. Start the MySQL container:
+```bash
+docker-compose -f docker/docker-compose.yml up -d mysql
+```
+
+4. Verify the container is running and find the assigned port:
+```bash
+docker-compose -f docker/docker-compose.yml ps
+# or to see just the port mapping:
+docker-compose -f docker/docker-compose.yml port mysql 3306
+```
+
+**Note**: If port 3306 is in use, Docker will automatically try ports 3307-3310
+
+### Database Connection
+
+Once the container is running, you can connect to MySQL using:
+
+**Connection String:**
+```
+mysql://job_board_user:devpassword123@localhost:3306/job_board
+```
+
+**Direct MySQL Client:**
+```bash
+mysql -h 127.0.0.1 -P 3306 -u job_board_user -p
+# Enter password: devpassword123
+```
+
+**From the API Application:**
+```typescript
+// Connection configuration
+{
+  host: process.env.DATABASE_HOST || 'localhost',
+  port: parseInt(process.env.DATABASE_PORT || '3306'),
+  database: process.env.MYSQL_DATABASE,
+  username: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+}
+```
+
+### Container Management
+
+**Stop the container:**
+```bash
+docker-compose -f docker/docker-compose.yml stop mysql
+```
+
+**Start the container:**
+```bash
+docker-compose -f docker/docker-compose.yml start mysql
+```
+
+**Stop and remove the container (preserves data):**
+```bash
+docker-compose -f docker/docker-compose.yml down
+```
+
+**Remove container and data volume (⚠️ destroys all data):**
+```bash
+docker-compose -f docker/docker-compose.yml down -v
+```
+
+### Troubleshooting
+
+If you encounter connection issues:
+1. Check if the container is healthy: `docker-compose -f docker/docker-compose.yml ps`
+2. View container logs: `docker-compose -f docker/docker-compose.yml logs mysql`
+3. Ensure port 3306 is not already in use: `lsof -i :3306`
+
+For more detailed information, see [docs/DATABASE.md](docs/DATABASE.md).
+
 ## Finish your CI setup
 
 [Click here to finish setting up your workspace!](https://cloud.nx.app/connect/f6LACPkg5C)
