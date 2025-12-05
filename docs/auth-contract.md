@@ -5,7 +5,7 @@ This document defines the “auth contract” that other teams can rely on while
 ## 1. Baseline Audit & Goals
 
 ### Workspace snapshot
-- Nx monorepo rooted at `/Users/christopherperet/code_projects/webapps/job-board` with two apps: `apps/api` (Nest 11 scaffold) and `apps/web` (Next 16). Shared lint/test tooling is already wired up through Nx.
+- Nx monorepo rooted at `../job-board` with two apps: `apps/api` (Nest 11 scaffold) and `apps/web` (Next 16). Shared lint/test tooling is already wired up through Nx.
 - Local data stack is MySQL 8.0 via `docker/docker-compose.yml`, seeded with credentials from `docker/.env` (see `README.md` and `docs/DATABASE.md`).
 - UX/product references already exist in `docs/workflow-diagrams`. We are pivoting to passwordless magic-link login as the sole entry point for now; OAuth providers remain future expansion.
 
