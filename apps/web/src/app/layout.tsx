@@ -1,10 +1,10 @@
-import "./global.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import './global.css';
+import Header from '../components/auth/Header';
+import Footer from '../components/Footer';
 
 export const metadata = {
-  title: "Sin City Tech Jobs",
-  description: "Tech job board by Tech Alley community",
+  title: 'Sin City Tech Jobs',
+  description: 'Tech job board by Tech Alley community',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
