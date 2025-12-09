@@ -10,9 +10,9 @@
     "@nestjs/platform-express": "^11.0.0",
     "axios": "^1.6.0",
     "daisyui": "^5.3.7",
-    "next": "^16.0.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   },
