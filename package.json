@@ -11,8 +11,8 @@
     "axios": "^1.6.0",
     "daisyui": "^5.3.7",
     "next": "^16.0.7",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   },
