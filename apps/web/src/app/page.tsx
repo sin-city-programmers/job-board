@@ -4,6 +4,7 @@ import { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import JobList from "../components/JobList";
 import CallToAction from "../components/CallToAction";
+import PageContainer from "../components/PageContainer";
 
 export default function Index() {
   const [search, setSearch] = useState("");
@@ -42,10 +43,10 @@ export default function Index() {
   ];
 
   return (
-    <div>
+    <PageContainer>
       <SearchBar search={search} onSearchChange={setSearch} />
       <JobList jobs={jobs} />
       <CallToAction />
-    </div>
+    </PageContainer>
   );
 }
