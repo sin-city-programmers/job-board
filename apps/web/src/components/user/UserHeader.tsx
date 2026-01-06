@@ -1,15 +1,19 @@
 'use client';
 
 import { useState } from 'react';
-
+import { User } from '../../context/AuthContext';
 type UserMode = 'company' | 'personal';
 
-export default function UserHeader() {
+type UserHeaderProps = {
+  user: User;
+  logout: () => void;
+};
+
+export default function UserHeader({ user, logout }: UserHeaderProps) {
   const [userMode, setUserMode] = useState<UserMode>('personal');
 
   return (
     <header className="flex items-center justify-between border-b bg-white px-8 py-4">
-      {/* Logo */}
       <h1 className="text-xl font-semibold text-gray-900">Sin City Tech Jobs</h1>
 
       {/* Mode Toggle */}
@@ -44,7 +48,7 @@ export default function UserHeader() {
           className="btn btn-ghost btn-circle avatar"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
-            JS
+            {user.initials}
           </div>
         </div>
         <ul
@@ -77,7 +81,10 @@ export default function UserHeader() {
             </a>
           </li>
           <li>
-            <a className="hover:bg-base-200 text-gray-700">
+            <button
+              onClick={logout}
+              className="hover:bg-base-200 cursor-pointer text-gray-700"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -93,7 +100,7 @@ export default function UserHeader() {
                 />
               </svg>
               Logout
-            </a>
+            </button>
           </li>
         </ul>
       </div>
