@@ -18,6 +18,9 @@ COPY . .
 # Sync Nx workspace before building
 RUN npx nx sync
 
+# Disable Nx Daemon for Docker builds
+ENV NX_DAEMON=false
+
 # Build the web app
 RUN npx nx build web --prod
 
