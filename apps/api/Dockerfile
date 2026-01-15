@@ -15,6 +15,9 @@ RUN npm ci
 # Copy source code
 COPY . .
 
+# Sync Nx workspace before building
+RUN npx nx sync
+
 # Build the API
 RUN npx nx build api --prod
 

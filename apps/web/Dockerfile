@@ -15,6 +15,9 @@ RUN npm ci
 # Copy source code
 COPY . .
 
+# Sync Nx workspace before building
+RUN npx nx sync
+
 # Build the web app
 RUN npx nx build web --prod
 
@@ -34,12 +37,16 @@ RUN npm ci --only=production
 COPY --from=builder /app/apps/web/.next ./apps/web/.next
 COPY --from=builder /app/apps/web/public ./apps/web/public
 COPY --from=builder /app/apps/web/next.config.js ./apps/web/
+COPY --from=builder /app/apps/web/package.json ./apps/web/
 COPY --from=builder /app/node_modules ./node_modules
 
 WORKDIR /app/apps/web
 
 # Expose port
 EXPOSE 3000
+
+# Set NODE_ENV for production
+ENV NODE_ENV=production
 
 # Start Next.js
 CMD ["npx", "next", "start", "--port", "3000"]

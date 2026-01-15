@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "neverConnectToCloud": true,
+  "sync": {
+    "applyChanges": true
+  },
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
