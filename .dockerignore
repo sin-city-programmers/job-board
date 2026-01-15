@@ -9,4 +9,3 @@ dist
 .idea
 coverage
 .DS_Store
-nx.json
