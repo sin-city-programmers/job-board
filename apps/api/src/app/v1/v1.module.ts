@@ -11,7 +11,7 @@ import { MeModule } from './me/me.module';
       {
         path: 'v1',
         children: [
-          { path: '', module: HelloModule },
+          { path: 'hello', module: HelloModule },
           { path: 'me', module: MeModule },
         ],
       },
